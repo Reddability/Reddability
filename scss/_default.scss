@@ -70,7 +70,9 @@ hr {
 .right,
 .account-activity-box a,
 .titlebox .bottom,
-.helplink {
+.helplink,
+.date,
+.shortlink {
 	&:first-letter {
 		text-transform: uppercase;
 	}

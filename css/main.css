@@ -49,7 +49,9 @@ hr {
 .right:first-letter,
 .account-activity-box a:first-letter,
 .titlebox .bottom:first-letter,
-.helplink:first-letter {
+.helplink:first-letter,
+.date:first-letter,
+.shortlink:first-letter {
   text-transform: uppercase; }
 
 #header {
@@ -191,6 +193,11 @@ hr {
     background-color: white !important; }
   .side .titlebox {
     background-color: white !important;
+    border: 1px solid #c4dbf1 !important;
+    border-radius: 1px !important;
+    padding: 5px; }
+  .side .linkinfo {
+    background-color: aliceblue !important;
     border: 1px solid #c4dbf1 !important;
     border-radius: 1px !important;
     padding: 5px; }
