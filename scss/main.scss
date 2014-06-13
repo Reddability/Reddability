@@ -2,11 +2,11 @@
 
 // Header
 #header {
-	//background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
 	background: $blue_white !important;
 	border-bottom: 1px solid $blue_light !important;
 	height: 73px;
 	width: 100% !important;
+	padding-bottom: 5px !important;
 
 	#sr-header-area {
 		height: 28px !important;
@@ -40,6 +40,9 @@
 		display: table;
 		background-color: transparent !important;
 		border-spacing: 0;
+		bottom: -3px;
+		top: auto;
+		font-size: 11px !important;
 	}
 
 	#header-bottom-right .separator {

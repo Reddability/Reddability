@@ -36,7 +36,8 @@ html, body {
   background: aliceblue !important;
   border-bottom: 1px solid #c4dbf1 !important;
   height: 73px;
-  width: 100% !important; }
+  width: 100% !important;
+  padding-bottom: 5px !important; }
   #header #sr-header-area {
     height: 28px !important;
     border-bottom: none !important;
@@ -61,7 +62,10 @@ html, body {
   #header #header-bottom-right {
     display: table;
     background-color: transparent !important;
-    border-spacing: 0; }
+    border-spacing: 0;
+    bottom: -3px;
+    top: auto;
+    font-size: 11px !important; }
   #header #header-bottom-right .separator {
     display: none !important; }
   #header #header-bottom-right .user,
