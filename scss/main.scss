@@ -47,9 +47,6 @@ $blue_dark: #369;
 		display: none !important;
 	}
 
-	#header-bottom-right > ul, #header-bottom-right a {
-	}
-
 	#header-bottom-right .user, #mail, #header-bottom-right .pref-lang, #header-bottom-right .logout {
 		vertical-align: middle;
 		display: table-cell !important;
@@ -85,7 +82,6 @@ $blue_dark: #369;
 		-webkit-box-sizing: border-box;
 		font-size: 15px;
 		text-align: center;
-		autocomplete: none;
 	}
 
 	#search input[name="q"]::-webkit-input-placeholder:first-letter {
@@ -271,16 +267,27 @@ $blue_dark: #369;
 		}
 
 		.expando-button.selftext:before {
+			position: absolute;
+			display: table-cell;
+			padding: 3px 0 0 1px;
 			content: "Aa" !important;
-			margin-right: -5px !important;
 			vertical-align: sub !important;
 		}
 
+		$plus_padding: 12px;
 		.expando-button.selftext:after {
 			content: "+" !important;
 			font-size: 9px !important;
 			line-height: 0px !important;
 			vertical-align: super !important;
+			padding: 5px 0 0 $plus_padding;
+			position: absolute;
+			display: table-cell;
+		}
+
+		.expando-button.selftext.expanded:after {
+			content: "-" !important;
+			padding-left: $plus_padding + 2;
 		}
 	}
 }

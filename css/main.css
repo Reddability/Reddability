@@ -53,8 +53,7 @@
   padding: 5px !important;
   -webkit-box-sizing: border-box;
   font-size: 15px;
-  text-align: center;
-  autocomplete: none; }
+  text-align: center; }
 .side #search input[name="q"]::-webkit-input-placeholder:first-letter {
   text-transform: uppercase; }
 .side #search input[name="q"]:active, .side #search input[name="q"]:focus {
@@ -167,14 +166,22 @@
     border-radius: 1px !important;
     padding: 0 1px 0 2px !important; }
   .content #siteTable .expando-button.selftext:before {
+    position: absolute;
+    display: table-cell;
+    padding: 3px 0 0 1px;
     content: "Aa" !important;
-    margin-right: -5px !important;
     vertical-align: sub !important; }
   .content #siteTable .expando-button.selftext:after {
     content: "+" !important;
     font-size: 9px !important;
     line-height: 0px !important;
-    vertical-align: super !important; }
+    vertical-align: super !important;
+    padding: 5px 0 0 12px;
+    position: absolute;
+    display: table-cell; }
+  .content #siteTable .expando-button.selftext.expanded:after {
+    content: "-" !important;
+    padding-left: 14px; }
 
 #header #RESShortcutsEditContainer {
   background: transparent !important; }
