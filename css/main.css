@@ -310,6 +310,11 @@ hr {
   #header #RESShortcutsEditContainer #RESShortcutsLeft {
     background: transparent !important; }
 
+#REScommentSubToggle {
+  border-radius: 1px;
+  font-weight: normal;
+  text-transform: capitalize; }
+
 .NERPageMarker, #progressIndicator {
   text-transform: none;
   box-sizing: border-box; }

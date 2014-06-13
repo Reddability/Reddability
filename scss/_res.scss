@@ -27,6 +27,12 @@
 	}
 }
 
+#REScommentSubToggle {
+    border-radius: 1px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
 .NERPageMarker {
 	@extend .footer;
 	text-transform: none;
