@@ -187,6 +187,11 @@ html, body {
     text-transform: uppercase; }
   .side .slidecontentbox .content {
     background-color: white !important; }
+  .side .titlebox {
+    background-color: white !important;
+    border: 1px solid #c4dbf1 !important;
+    border-radius: 1px !important;
+    padding: 5px; }
 
 .gold-bubble {
   border-radius: 1px;

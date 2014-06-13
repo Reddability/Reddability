@@ -226,6 +226,13 @@
 	.slidecontentbox .content {
 		background-color: white !important;
 	}
+
+	.titlebox {
+		background-color: white !important;
+		border: 1px solid $blue_light !important;
+		border-radius: 1px !important;
+		padding: 5px;
+	}
 }
 
 .gold-bubble {
