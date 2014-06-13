@@ -1,8 +1,5 @@
 @import 'default';
 
-$blue_white: #C4DBF1;
-$blue_dark: #369;
-
 // HEADER
 #header {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
@@ -209,7 +206,7 @@ $blue_dark: #369;
 }
 
 .content {
-	 .spacer {
+	.spacer {
 		margin-bottom: 0 !important;
 	}
 
