@@ -48,13 +48,23 @@ $blue_dark: #369;
 	}
 
 	#header-bottom-right .user, #mail, #header-bottom-right .pref-lang, #header-bottom-right .logout {
-		vertical-align: middle;
-		display: table-cell !important;
+		display: block;
 		float: left;
+		text-transform: capitalize;
 		padding: 0 5px;
-		text-transform: capitalize !important;
 		width: auto;
 		font-weight: normal;
+
+		:first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	.logout {
+		text-transform: lowercase !important;
+		a {
+			display: block;
+		}
 	}
 
 	.user {

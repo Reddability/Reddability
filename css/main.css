@@ -30,13 +30,18 @@
   #header #header-bottom-right .separator {
     display: none !important; }
   #header #header-bottom-right .user, #header #mail, #header #header-bottom-right .pref-lang, #header #header-bottom-right .logout {
-    vertical-align: middle;
-    display: table-cell !important;
+    display: block;
     float: left;
+    text-transform: capitalize;
     padding: 0 5px;
-    text-transform: capitalize !important;
     width: auto;
     font-weight: normal; }
+    #header #header-bottom-right .user :first-letter, #header #mail :first-letter, #header #header-bottom-right .pref-lang :first-letter, #header #header-bottom-right .logout :first-letter {
+      text-transform: uppercase; }
+  #header .logout {
+    text-transform: lowercase !important; }
+    #header .logout a {
+      display: block; }
   #header .user {
     width: 90%; }
   #header .userkarma {
