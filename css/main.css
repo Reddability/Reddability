@@ -157,11 +157,9 @@ html, body {
     border-bottom-width: 1px !important; }
   .side .goldvertisement a:first-letter {
     text-transform: uppercase; }
-  .side .gold-bubble {
-    top: 405px !important;
-    left: 975px !important; }
   .side .sidecontentbox .content {
-    background-color: white !important; }
+    background-color: white !important;
+    border-color: #c4dbf1 !important; }
   .side .gadget {
     padding: 3px !important; }
     .side .gadget .midcol {
@@ -182,6 +180,11 @@ html, body {
   .side .slidecontentbox .content {
     background-color: white !important; }
 
+.gold-bubble {
+  border-radius: 1px;
+  top: 410px !important;
+  left: 975px !important; }
+
 .content .spacer {
   margin-bottom: 0 !important; }
 .content #siteTable {
@@ -193,6 +196,8 @@ html, body {
     margin-bottom: 4px;
     border-radius: 1px;
     border: 1px solid #c4dbf1 !important; }
+    .content #siteTable .thing .RES-keyNav-activeElement {
+      background: white !important; }
   .content #siteTable .last-clicked {
     border: none; }
   .content #siteTable .rank {

@@ -180,13 +180,9 @@
 		text-transform: uppercase;
 	}
 
-	.gold-bubble {
-		top: 405px !important;
-		left: 975px !important;
-	}
-
 	.sidecontentbox  .content {
 		background-color: white !important;
+		border-color: $blue_light !important;
 	}
 
 	.gadget {
@@ -223,6 +219,12 @@
 	}
 }
 
+.gold-bubble {
+	border-radius: 1px;
+	top: 410px !important;
+	left: 975px !important;
+}
+
 // Content
 
 .content {
@@ -240,6 +242,9 @@
 			margin-bottom: 4px;
 			border-radius: 1px;
 			border: 1px solid $blue_light !important;
+			.RES-keyNav-activeElement {
+				background: white !important;
+			}
 		}
 		.last-clicked {
 			border: none;
