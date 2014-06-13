@@ -1,6 +1,11 @@
 html, body {
   background-color: #f3f3f3 !important; }
 
+hr {
+  border-color: #c4dbf1 !important;
+  border-bottom: none !important;
+  margin: 10px 0 !important; }
+
 .titlebox .add, .titlebox .remove, .titlebox .RESshortcutside, .titlebox .RESDashboardToggle {
   padding: 3px 6px !important;
   background-image: none !important;

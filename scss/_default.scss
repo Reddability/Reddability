@@ -10,6 +10,12 @@ html, body {
 	background-color: $lightgray !important;
 }
 
+hr {
+	border-color: $blue_light !important;
+	border-bottom: none !important;
+	margin: 10px 0 !important;
+}
+
 .titlebox {
 	.add, .RESshortcutside, .RESDashboardToggle {
 		padding: 3px 6px !important;
