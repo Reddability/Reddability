@@ -204,10 +204,6 @@ hr {
   margin: 5px !important; }
   .content .spacer {
     margin-bottom: 0 !important; }
-  .content .comment {
-    background-color: white !important;
-    border: 1px solid #c4dbf1 !important;
-    border-radius: 1px !important; }
   .content #siteTable {
     margin-top: 0px !important; }
     .content #siteTable .thing {
@@ -217,7 +213,7 @@ hr {
       margin-bottom: 4px;
       border-radius: 1px;
       border: 1px solid #c4dbf1 !important; }
-      .content #siteTable .thing .RES-keyNav-activeElement {
+      .content #siteTable .thing .entry.RES-keyNav-activeElement {
         background: white !important; }
     .content #siteTable .last-clicked {
       border: none; }
@@ -272,6 +268,16 @@ hr {
     .content #siteTable .expando-button.selftext.expanded:after {
       content: "-" !important;
       padding-left: 14px; }
+  .content .commentarea .comment {
+    background-color: white !important;
+    border: 1px solid #c4dbf1 !important;
+    border-radius: 1px !important; }
+  .content .commentarea .sitetable > .comment .entry.RES-keyNav-activeElement {
+    background-color: transparent !important; }
+    .content .commentarea .sitetable > .comment .entry.RES-keyNav-activeElement .noncollapsed {
+      background-color: transparent !important; }
+      .content .commentarea .sitetable > .comment .entry.RES-keyNav-activeElement .noncollapsed .md:first-child {
+        background-color: transparent !important; }
 
 .listing-chooser.initialized {
   display: none !important;
@@ -288,9 +294,6 @@ hr {
   color: #336699;
   border: none;
   top: 0; }
-#header .RES-keyNav-activeElement {
-  background: transparent !important;
-  border-radius: 1px; }
 #header #RESShortcutsEditContainer {
   background: transparent !important; }
   #header #RESShortcutsEditContainer #RESShortcutsSort,

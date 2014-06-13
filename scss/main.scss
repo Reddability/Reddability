@@ -223,12 +223,6 @@
 		margin-bottom: 0 !important;
 	}
 
-	.comment {
-		background-color: white !important;
-		border: 1px solid $blue_light !important;
-		border-radius: 1px !important;
-	}
-
 	#siteTable {
 		margin-top: 0px !important;
 
@@ -239,7 +233,7 @@
 			margin-bottom: 4px;
 			border-radius: 1px;
 			border: 1px solid $blue_light !important;
-			.RES-keyNav-activeElement {
+			.entry.RES-keyNav-activeElement {
 				background: white !important;
 			}
 		}
@@ -318,6 +312,24 @@
 		.expando-button.selftext.expanded:after {
 			content: "-" !important;
 			padding-left: $plus_padding + 2;
+		}
+	}
+
+	.commentarea {
+		.comment {
+			background-color: white !important;
+			border: 1px solid $blue_light !important;
+			border-radius: 1px !important;
+		}
+
+		.sitetable > .comment .entry.RES-keyNav-activeElement {
+			background-color: transparent !important;
+			.noncollapsed {
+				background-color: transparent !important;
+				.md:first-child {
+					background-color: transparent !important;
+				}
+			}
 		}
 	}
 }
