@@ -1,0 +1,186 @@
+#header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
+  border-bottom: none !important;
+  height: 73px;
+  width: 100% !important; }
+  #header #sr-header-area {
+    height: 28px !important;
+    border-bottom: none !important;
+    background: transparent !important; }
+  #header #sr-header-area .width-clip, #header #sr-more-link {
+    padding: 5px !important;
+    margin-bottom: 10px;
+    background: transparent; }
+  #header #sr-header-area .sr-list {
+    text-overflow: ellipsis;
+    max-width: 90%;
+    display: block; }
+  #header .tabmenu li a {
+    font-weight: normal !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-transform: capitalize !important;
+    display: block;
+    float: left;
+    padding: 0 10px !important; }
+  #header #header-bottom-right {
+    display: table;
+    background-color: transparent !important;
+    border-spacing: 0; }
+  #header #header-bottom-right .separator {
+    display: none !important; }
+  #header #header-bottom-right .user, #header #mail, #header #header-bottom-right .pref-lang, #header #header-bottom-right .logout {
+    vertical-align: middle;
+    display: table-cell !important;
+    float: left;
+    padding: 0 5px;
+    text-transform: capitalize !important;
+    width: auto;
+    font-weight: normal; }
+  #header .user {
+    width: 90%; }
+  #header .userkarma {
+    width: 100%; }
+  #header #mail {
+    padding-left: 0 !important;
+    margin-left: 5px !important;
+    width: 15px !important; }
+
+.side #search input[name="q"] {
+  border-radius: 1px !important;
+  border-color: #c4dbf1;
+  width: 300px !important;
+  padding: 5px !important;
+  -webkit-box-sizing: border-box;
+  font-size: 15px;
+  text-align: center;
+  autocomplete: none; }
+.side #search input[name="q"]::-webkit-input-placeholder:first-letter {
+  text-transform: uppercase; }
+.side #search input[name="q"]:active, .side #search input[name="q"]:focus {
+  outline: none !important;
+  border: 1px solid #336699; }
+.side #searchexpando {
+  border-radius: 1px !important;
+  background-color: #FFFAE5 !important;
+  border-color: #F6E69F; }
+.side #searchexpando:first-letter {
+  text-transform: uppercase; }
+.side .morelink {
+  background: none !important;
+  background-color: #F0F8FF !important;
+  font-weight: normal !important;
+  color: #336699 !important;
+  border: none !important; }
+.side .morelink a {
+  border: 1px solid #c4dbf1 !important;
+  border-radius: 1px !important; }
+.side .morelink a:hover {
+  border: 1px solid #336699 !important;
+  color: #336699 !important; }
+.side .nub {
+  display: none; }
+.side .goldvertisement {
+  font-family: normal x-small verdana, arial, helvetica, sans-serif !important;
+  padding: 5px !important; }
+.side .goldvertisement:first-letter {
+  text-transform: uppercase; }
+.side .bar, .side .bar span {
+  border-radius: 1px !important; }
+.side .goldvertisement .inner {
+  border: none !important; }
+.side .goldvertisement a {
+  padding: 5px !important;
+  font-size: 12px !important;
+  border-radius: 1px !important;
+  border-bottom-width: 1px !important; }
+.side .goldvertisement a:first-letter {
+  text-transform: uppercase; }
+.side .gold-bubble {
+  top: 405px !important;
+  left: 975px !important; }
+.side .gadget {
+  padding: 3px !important; }
+.side .gadget .midcol {
+  width: 15px !important;
+  margin: 5px 10px 5px 5px !important;
+  display: table-cell;
+  float: none;
+  vertical-align: middle; }
+.side .gadget .right:first-letter {
+  text-transform: uppercase; }
+.side .account-activity-box a {
+  display: block; }
+.side .account-activity-box a:first-letter {
+  text-transform: uppercase; }
+
+.listing-chooser.initialized {
+  display: none !important;
+  width: 0 !important; }
+
+.content .spacer {
+  margin-bottom: 0 !important; }
+.content #siteTable {
+  margin-top: 0px !important; }
+  .content #siteTable .rank {
+    display: none; }
+  .content #siteTable .midcol {
+    display: table-cell;
+    float: none;
+    vertical-align: middle; }
+  .content #siteTable .thing {
+    display: table; }
+  .content #siteTable .entry, .content #siteTable .thumbnail, .content #siteTable .midcol {
+    display: table-cell;
+    vertical-align: middle; }
+  .content #siteTable .thumbnail {
+    margin-left: 10px !important; }
+  .content #siteTable .arrow {
+    background-position: 0 0 !important;
+    background-size: 100% !important;
+    width: 15px;
+    height: 15px; }
+  .content #siteTable .arrow.up {
+    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png") !important; }
+  .content #siteTable .upmod {
+    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png") !important; }
+  .content #siteTable .arrow.down {
+    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png") !important; }
+  .content #siteTable .downmod {
+    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png") !important; }
+  .content #siteTable .usertext .md {
+    border-radius: 1px !important;
+    border-color: #c4dbf1 !important;
+    background-color: #FEFEFE !important; }
+  .content #siteTable .expando-button.selftext {
+    font-size: 13px !important;
+    display: table-cell !important;
+    text-align: center !important;
+    background: #FDFDFD !important;
+    vertical-align: middle !important;
+    border: 1px solid #888 !important;
+    width: 24px !important;
+    color: #888 !important;
+    height: 24px !important;
+    line-height: 18px !important;
+    -webkit-box-sizing: border-box !important;
+    border-radius: 1px !important;
+    padding: 0 1px 0 2px !important; }
+  .content #siteTable .expando-button.selftext:before {
+    content: "Aa" !important;
+    margin-right: -5px !important;
+    vertical-align: sub !important; }
+  .content #siteTable .expando-button.selftext:after {
+    content: "+" !important;
+    font-size: 9px !important;
+    line-height: 0px !important;
+    vertical-align: super !important; }
+
+#header #RESShortcutsEditContainer {
+  background: transparent !important; }
+  #header #RESShortcutsEditContainer #RESShortcutsSort,
+  #header #RESShortcutsEditContainer #RESShortcutsRight,
+  #header #RESShortcutsEditContainer #RESShortcutsAdd,
+  #header #RESShortcutsEditContainer #RESShortcutsTrash,
+  #header #RESShortcutsEditContainer #RESShortcutsLeft {
+    background: transparent !important; }

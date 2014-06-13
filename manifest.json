@@ -5,15 +5,11 @@
 	"description": "Reddit clutterless.",
 	"version": "1.0",
 
-	/*"browser_action": {
-		"default_popup": "popup.html"
-	},*/
-
 	"content_scripts": [
 		{
 			"matches": ["*://*.reddit.com/*"],
-			"js": ["content.js"],
-			"css": ["content.css"]
+			"js": ["js/jquery.js", "js/main.js"],
+			"css": ["css/main.css"]
 		}
 	],
 	"web_accessible_resources": [
