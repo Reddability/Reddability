@@ -2,8 +2,9 @@
 
 // Header
 #header {
-	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
-	border-bottom: none !important;
+	//background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
+	background: $blue_white !important;
+	border-bottom: 1px solid $blue_light !important;
 	height: 73px;
 	width: 100% !important;
 
@@ -46,9 +47,12 @@
 	}
 
 	#header-bottom-right {
-		.user, #mail, .pref-lang, .logout {
+		.user,
+		#mail,
+		.pref-lang,
+		.logout {
 			display: block;
-			line-height: 18px;
+			line-height: 24px;
 			float: left;
 			text-transform: capitalize;
 			padding: 0 5px;
@@ -71,20 +75,30 @@
 
 	.userkarma {
 		width: 100%;
+		border-bottom: none;
 	}
 
 	#mail {
+		position: relative;
 		padding-left: 0 !important;
 		margin-left: 5px !important;
 		width: 15px !important;
+		height: 22px !important;
+		top: 7px;
 	}
 }
 
 // Right Sidebar
 .side {
+	background: transparent !important;
+
+	.spacer {
+		background-color: transparent !important;
+	}
+
 	#search input[name="q"] {
 		border-radius: 1px !important;
-		border-color: $blue_white;
+		border-color: $blue_light;
 		width: 300px !important;
 		padding: 5px !important;
 		-webkit-box-sizing: border-box;
@@ -96,7 +110,8 @@
 		text-transform: uppercase;
 	}
 
-	#search input[name="q"]:active, #search input[name="q"]:focus {
+	#search input[name="q"]:active,
+	#search input[name="q"]:focus {
 		outline: none !important;
 		border: 1px solid $blue_dark;
 	}
@@ -120,7 +135,7 @@
 	}
 
 	.morelink a {
-		border: 1px solid $blue_white !important;
+		border: 1px solid $blue_light !important;
 		border-radius: 1px !important;
 	}
 
@@ -134,6 +149,7 @@
 	}
 
 	.goldvertisement {
+		background-color: white !important;
 		font-family: normal x-small verdana, arial, helvetica, sans-serif !important;
 		padding: 5px !important;
 	}
@@ -166,6 +182,10 @@
 		left: 975px !important;
 	}
 
+	.sidecontentbox  .content {
+		background-color: white !important;
+	}
+
 	.gadget {
 		padding: 3px !important;
 
@@ -194,15 +214,13 @@
 	.account-activity-box a:first-letter {
 		text-transform: uppercase;
 	}
+
+	.slidecontentbox .content {
+		background-color: white !important;
+	}
 }
 
 // Content
-
-// Hide the left sidebar
-.listing-chooser.initialized {
-	display: none !important;
-	width: 0 !important;
-}
 
 .content {
 	.spacer {
@@ -212,18 +230,32 @@
 	#siteTable {
 		margin-top: 0px !important;
 
+		.thing {
+			display: table;
+			background-color: white;
+			padding: 3px 0;
+			margin-bottom: 4px;
+			border-radius: 1px;
+			border: 1px solid $blue_light !important;
+		}
+		.last-clicked {
+			border: none;
+		}
+
 		.rank {
 			display: none;
 		}
 
 		.midcol {
-			display: table-cell;
 			float: none;
-			vertical-align: middle;
+			max-width: 50px;
+			min-width: 50px;
 		}
 
-		.thing {
-			display: table;
+		.entry {
+			width: 100%;
+			min-height: 60px;
+			padding: 0 3px;
 		}
 
 		.entry, .thumbnail, .midcol {
@@ -232,24 +264,25 @@
 		}
 
 		.thumbnail {
-			margin-left: 10px !important;
+			min-width: 70px;
+			max-width: 70px;
 		}
 
-		.usertext .md {
-			border-radius: 1px !important;
-			border-color: $blue_white !important;
-			background-color: #FEFEFE !important;
+		.md {
+			border: none;
+			background-color: transparent !important;
+			max-width: none;
 		}
 
 		.expando-button.selftext {
 			font-size: 13px !important;
 			display: table-cell !important;
 			text-align: center !important;
-			background: #FDFDFD !important;
+			background: transparent !important;
 			vertical-align: middle !important;
-			border: 1px solid #888 !important;
+			border: 1px solid $blue_dark !important;
 			width: 24px !important;
-			color: #888 !important;
+			color: $blue_dark !important;
 			height: 24px !important;
 			line-height: 18px !important;
 			-webkit-box-sizing: border-box !important;
@@ -260,7 +293,7 @@
 		.expando-button.selftext:before {
 			position: absolute;
 			display: table-cell;
-			padding: 3px 0 0 1px;
+			padding: 5px 0 0 1px;
 			content: "Aa" !important;
 			vertical-align: sub !important;
 		}
@@ -283,7 +316,19 @@
 	}
 }
 
+.listing-chooser.initialized {
+	// Hide the left sidebar
+	display: none !important;
+	width: 0 !important;
+}
+
 // Footer
+.footer {
+	border: 1px solid $blue_light !important;
+	border-radius: 1px !important;
+	text-transform: capitalize !important;
+	background: white !important;
+}
 
 // Support for RES
 @import 'res';

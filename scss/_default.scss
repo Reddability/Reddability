@@ -1,11 +1,40 @@
-$blue_white: #C4DBF1;
+$blue_light: #C4DBF1;
+$blue_white: #F0F8FF;
 $blue_dark: #369;
+$gray: #888;
+$lightgray: #F3F3F3;
+$green: #79B949;
+$red: #D16063;
+
+html, body {
+	background-color: $lightgray !important;
+}
+
+.titlebox {
+	.add, .RESshortcutside, .RESDashboardToggle {
+		padding: 3px 6px !important;
+		background-image: none !important;
+		background-color: $green !important;
+		border-radius: 1px !important;
+		font-weight: normal !important;
+		text-transform: capitalize;
+
+	}
+	.remove {
+		@extend .add;
+		background-color: $red !important;
+	}
+}
 
 .arrow {
 	background-position: 0 0 !important;
 	background-size: 100% !important;
 	width: 15px;
 	height: 15px;
+}
+
+.domain, .linkflairlabel {
+	display: none !important;
 }
 
 .arrow.up {

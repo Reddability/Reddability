@@ -1,13 +1,9 @@
-(function() {
-    var link = document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = chrome.extension.getURL('img/favicon.ico');
-    console.log('Favicon has been successfully set to: ' + link.href);
-    document.getElementsByTagName('head')[0].appendChild(link);
-}());
-
 $(document).ready(function() {
+    var favicon = $('link[type="image/x-icon"');
+    $(favicon).attr('rel', 'shortcut icon');
+    $(favicon).attr('href', chrome.extension.getURL('img/favicon.ico'));
+    console.log('Favicon has been set.');
+
 	$('.side #search input[name="q"]').attr('autocomplete', 'off');
 	console.log('Search autocomplete has been turned off.');
 });
