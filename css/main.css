@@ -105,7 +105,11 @@ html, body {
 .side {
   background: transparent !important; }
   .side .spacer {
-    background-color: transparent !important; }
+    background-color: transparent !important;
+    margin: 10px 0 !important; }
+    .side .spacer:first-of-type {
+      margin-top: 5px !important;
+      color: red !important; }
   .side #search input[name="q"] {
     border-radius: 1px !important;
     border-color: #c4dbf1;
@@ -113,7 +117,8 @@ html, body {
     padding: 5px !important;
     -webkit-box-sizing: border-box;
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0 !important; }
   .side #search input[name="q"]::-webkit-input-placeholder:first-letter {
     text-transform: uppercase; }
   .side #search input[name="q"]:active,
@@ -159,7 +164,10 @@ html, body {
     text-transform: uppercase; }
   .side .sidecontentbox .content {
     background-color: white !important;
-    border-color: #c4dbf1 !important; }
+    border-color: #c4dbf1 !important;
+    width: 300px !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important; }
   .side .gadget {
     padding: 3px !important; }
     .side .gadget .midcol {
@@ -185,72 +193,74 @@ html, body {
   top: 410px !important;
   left: 975px !important; }
 
-.content .spacer {
-  margin-bottom: 0 !important; }
-.content #siteTable {
-  margin-top: 0px !important; }
-  .content #siteTable .thing {
-    display: table;
-    background-color: white;
-    padding: 3px 0;
-    margin-bottom: 4px;
-    border-radius: 1px;
-    border: 1px solid #c4dbf1 !important; }
-    .content #siteTable .thing .RES-keyNav-activeElement {
-      background: white !important; }
-  .content #siteTable .last-clicked {
-    border: none; }
-  .content #siteTable .rank {
-    display: none; }
-  .content #siteTable .midcol {
-    float: none;
-    max-width: 50px;
-    min-width: 50px; }
-  .content #siteTable .entry {
-    width: 100%;
-    min-height: 60px;
-    padding: 0 3px; }
-  .content #siteTable .entry, .content #siteTable .thumbnail, .content #siteTable .midcol {
-    display: table-cell;
-    vertical-align: middle; }
-  .content #siteTable .thumbnail {
-    min-width: 70px;
-    max-width: 70px; }
-  .content #siteTable .md {
-    border: none;
-    background-color: transparent !important;
-    max-width: none; }
-  .content #siteTable .expando-button.selftext {
-    font-size: 13px !important;
-    display: table-cell !important;
-    text-align: center !important;
-    background: transparent !important;
-    vertical-align: middle !important;
-    border: 1px solid #336699 !important;
-    width: 24px !important;
-    color: #336699 !important;
-    height: 24px !important;
-    line-height: 18px !important;
-    -webkit-box-sizing: border-box !important;
-    border-radius: 1px !important;
-    padding: 0 1px 0 2px !important; }
-  .content #siteTable .expando-button.selftext:before {
-    position: absolute;
-    display: table-cell;
-    padding: 5px 0 0 1px;
-    content: "Aa" !important;
-    vertical-align: sub !important; }
-  .content #siteTable .expando-button.selftext:after {
-    content: "+" !important;
-    font-size: 9px !important;
-    line-height: 0px !important;
-    vertical-align: super !important;
-    padding: 5px 0 0 12px;
-    position: absolute;
-    display: table-cell; }
-  .content #siteTable .expando-button.selftext.expanded:after {
-    content: "-" !important;
-    padding-left: 14px; }
+.content {
+  margin: 5px !important; }
+  .content .spacer {
+    margin-bottom: 0 !important; }
+  .content #siteTable {
+    margin-top: 0px !important; }
+    .content #siteTable .thing {
+      display: table;
+      background-color: white;
+      padding: 3px 0;
+      margin-bottom: 4px;
+      border-radius: 1px;
+      border: 1px solid #c4dbf1 !important; }
+      .content #siteTable .thing .RES-keyNav-activeElement {
+        background: white !important; }
+    .content #siteTable .last-clicked {
+      border: none; }
+    .content #siteTable .rank {
+      display: none; }
+    .content #siteTable .midcol {
+      float: none;
+      max-width: 50px;
+      min-width: 50px; }
+    .content #siteTable .entry {
+      width: 100%;
+      min-height: 60px;
+      padding: 0 3px; }
+    .content #siteTable .entry, .content #siteTable .thumbnail, .content #siteTable .midcol {
+      display: table-cell;
+      vertical-align: middle; }
+    .content #siteTable .thumbnail {
+      min-width: 70px;
+      max-width: 70px; }
+    .content #siteTable .md {
+      border: none;
+      background-color: transparent !important;
+      max-width: none; }
+    .content #siteTable .expando-button.selftext {
+      font-size: 13px !important;
+      display: table-cell !important;
+      text-align: center !important;
+      background: transparent !important;
+      vertical-align: middle !important;
+      border: 1px solid #336699 !important;
+      width: 24px !important;
+      color: #336699 !important;
+      height: 24px !important;
+      line-height: 18px !important;
+      -webkit-box-sizing: border-box !important;
+      border-radius: 1px !important;
+      padding: 0 1px 0 2px !important; }
+    .content #siteTable .expando-button.selftext:before {
+      position: absolute;
+      display: table-cell;
+      padding: 5px 0 0 1px;
+      content: "Aa" !important;
+      vertical-align: sub !important; }
+    .content #siteTable .expando-button.selftext:after {
+      content: "+" !important;
+      font-size: 9px !important;
+      line-height: 0px !important;
+      vertical-align: super !important;
+      padding: 5px 0 0 12px;
+      position: absolute;
+      display: table-cell; }
+    .content #siteTable .expando-button.selftext.expanded:after {
+      content: "-" !important;
+      padding-left: 14px; }
 
 .listing-chooser.initialized {
   display: none !important;

@@ -97,6 +97,11 @@
 
 	.spacer {
 		background-color: transparent !important;
+		margin: 10px 0 !important;
+		&:first-of-type {
+			margin-top: 5px !important;
+			color: red !important;
+		}
 	}
 
 	#search input[name="q"] {
@@ -107,6 +112,7 @@
 		-webkit-box-sizing: border-box;
 		font-size: 15px;
 		text-align: center;
+		margin-top: 0 !important;
 	}
 
 	#search input[name="q"]::-webkit-input-placeholder:first-letter {
@@ -183,6 +189,9 @@
 	.sidecontentbox  .content {
 		background-color: white !important;
 		border-color: $blue_light !important;
+		width: 300px !important;
+		box-sizing: border-box !important;
+		margin-left: 0 !important;
 	}
 
 	.gadget {
@@ -228,6 +237,8 @@
 // Content
 
 .content {
+	margin: 5px !important;
+
 	.spacer {
 		margin-bottom: 0 !important;
 	}
