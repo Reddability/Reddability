@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Simple Reddit",
+	"description": "Reddit clutterless.",
+	"version": "1.0",
+
+	/*"browser_action": {
+		"default_popup": "popup.html"
+	},*/
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"js": ["content.js"],
+			"css": ["content.css"]
+		}
+	],
+	"web_accessible_resources": [
+		"img/favicon.ico",
+		"img/arrows/arrow_*.png"
+	]
+}
