@@ -1,3 +1,5 @@
+@import 'default';
+
 $blue_white: #C4DBF1;
 $blue_dark: #369;
 
@@ -47,28 +49,28 @@ $blue_dark: #369;
 		display: none !important;
 	}
 
-	#header-bottom-right .user, #mail, #header-bottom-right .pref-lang, #header-bottom-right .logout {
-		display: block;
-		float: left;
-		text-transform: capitalize;
-		padding: 0 5px;
-		width: auto;
-		font-weight: normal;
+	#header-bottom-right {
+		.user, #mail, .pref-lang, .logout {
+			display: block;
+			line-height: 18px;
+			float: left;
+			text-transform: capitalize;
+			padding: 0 5px;
+			width: auto;
+			height: auto;
+			font-weight: normal;
 
-		:first-letter {
-			text-transform: uppercase;
+			:first-letter {
+				text-transform: uppercase;
+			}
 		}
 	}
 
 	.logout {
-		text-transform: lowercase !important;
+		text-transform: lowercase !important; // Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
 		a {
 			display: block;
 		}
-	}
-
-	.user {
-		width: 90%;
 	}
 
 	.userkarma {
@@ -170,18 +172,23 @@ $blue_dark: #369;
 
 	.gadget {
 		padding: 3px !important;
-	}
 
-	.gadget .midcol {
-		width: 15px !important;
-		margin: 5px 10px 5px 5px !important;
-		display: table-cell;
-		float: none;
-		vertical-align: middle;
-	}
+		.midcol {
+			width: 15px !important;
+			margin: 5px 10px 5px 5px !important;
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+		}
 
-	.gadget .right:first-letter {
-		text-transform: uppercase;
+		.right:first-letter {
+			text-transform: uppercase;
+		}
+
+		.entry {
+			display: table-cell !important;
+			padding-left: 5px;
+		}
 	}
 
 	.account-activity-box a {
@@ -230,28 +237,6 @@ $blue_dark: #369;
 
 		.thumbnail {
 			margin-left: 10px !important;
-		}
-
-		.arrow {
-			background-position: 0 0 !important;
-			background-size: 100% !important;
-			width: 15px;
-			height: 15px;
-		}
-
-		.arrow.up {
-			background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png') !important;
-		}
-
-		.upmod {
-			background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png') !important;
-		}
-
-		.arrow.down {
-			background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png') !important;
-		}
-		.downmod {
-			background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png') !important;
 		}
 
 		.usertext .md {

@@ -1,4 +1,12 @@
 #header {
+
+	#userbarToggle {
+		background-color: transparent !important;
+		color: $blue_dark;
+		border: none;
+		@extend #mail;
+	}
+
 	#RESShortcutsEditContainer {
 		background: transparent !important;
 

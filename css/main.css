@@ -1,3 +1,21 @@
+.arrow {
+  background-position: 0 0 !important;
+  background-size: 100% !important;
+  width: 15px;
+  height: 15px; }
+
+.arrow.up {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png") !important; }
+
+.upmod {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png") !important; }
+
+.arrow.down {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png") !important; }
+
+.downmod {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png") !important; }
+
 #header {
   background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
   border-bottom: none !important;
@@ -29,24 +47,24 @@
     border-spacing: 0; }
   #header #header-bottom-right .separator {
     display: none !important; }
-  #header #header-bottom-right .user, #header #mail, #header #header-bottom-right .pref-lang, #header #header-bottom-right .logout {
+  #header #header-bottom-right .user, #header #header-bottom-right #mail, #header #header-bottom-right #userbarToggle, #header #header-bottom-right .pref-lang, #header #header-bottom-right .logout {
     display: block;
+    line-height: 18px;
     float: left;
     text-transform: capitalize;
     padding: 0 5px;
     width: auto;
+    height: auto;
     font-weight: normal; }
-    #header #header-bottom-right .user :first-letter, #header #mail :first-letter, #header #header-bottom-right .pref-lang :first-letter, #header #header-bottom-right .logout :first-letter {
+    #header #header-bottom-right .user :first-letter, #header #header-bottom-right #mail :first-letter, #header #header-bottom-right #userbarToggle :first-letter, #header #header-bottom-right .pref-lang :first-letter, #header #header-bottom-right .logout :first-letter {
       text-transform: uppercase; }
   #header .logout {
     text-transform: lowercase !important; }
     #header .logout a {
       display: block; }
-  #header .user {
-    width: 90%; }
   #header .userkarma {
     width: 100%; }
-  #header #mail {
+  #header #mail, #header #userbarToggle {
     padding-left: 0 !important;
     margin-left: 5px !important;
     width: 15px !important; }
@@ -105,14 +123,17 @@
   left: 975px !important; }
 .side .gadget {
   padding: 3px !important; }
-.side .gadget .midcol {
-  width: 15px !important;
-  margin: 5px 10px 5px 5px !important;
-  display: table-cell;
-  float: none;
-  vertical-align: middle; }
-.side .gadget .right:first-letter {
-  text-transform: uppercase; }
+  .side .gadget .midcol {
+    width: 15px !important;
+    margin: 5px 10px 5px 5px !important;
+    display: table-cell;
+    float: none;
+    vertical-align: middle; }
+  .side .gadget .right:first-letter {
+    text-transform: uppercase; }
+  .side .gadget .entry {
+    display: table-cell !important;
+    padding-left: 5px; }
 .side .account-activity-box a {
   display: block; }
 .side .account-activity-box a:first-letter {
@@ -139,19 +160,6 @@
     vertical-align: middle; }
   .content #siteTable .thumbnail {
     margin-left: 10px !important; }
-  .content #siteTable .arrow {
-    background-position: 0 0 !important;
-    background-size: 100% !important;
-    width: 15px;
-    height: 15px; }
-  .content #siteTable .arrow.up {
-    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png") !important; }
-  .content #siteTable .upmod {
-    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png") !important; }
-  .content #siteTable .arrow.down {
-    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png") !important; }
-  .content #siteTable .downmod {
-    background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png") !important; }
   .content #siteTable .usertext .md {
     border-radius: 1px !important;
     border-color: #c4dbf1 !important;
@@ -188,6 +196,10 @@
     content: "-" !important;
     padding-left: 14px; }
 
+#header #userbarToggle {
+  background-color: transparent !important;
+  color: #336699;
+  border: none; }
 #header #RESShortcutsEditContainer {
   background: transparent !important; }
   #header #RESShortcutsEditContainer #RESShortcutsSort,

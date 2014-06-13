@@ -1,0 +1,17 @@
+.arrow {
+  background-position: 0 0 !important;
+  background-size: 100% !important;
+  width: 15px;
+  height: 15px; }
+
+.arrow.up {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png") !important; }
+
+.upmod {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png") !important; }
+
+.arrow.down {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png") !important; }
+
+.downmod {
+  background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png") !important; }
