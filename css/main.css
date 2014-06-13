@@ -37,6 +37,19 @@ hr {
 .downmod {
   background-image: url("chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png") !important; }
 
+.user:first-letter,
+#mail:first-letter,
+#header #userbarToggle:first-letter,
+.pref-lang:first-letter,
+.logout:first-letter,
+#search input[name="q"]::-webkit-input-placeholder:first-letter,
+#searchexpando:first-letter,
+.goldvertisement:first-letter,
+.goldvertisement a:first-letter,
+.right:first-letter,
+.account-activity-box a:first-letter {
+  text-transform: uppercase; }
+
 #header {
   background: aliceblue !important;
   border-bottom: 1px solid #c4dbf1 !important;
@@ -86,12 +99,6 @@ hr {
     width: auto;
     height: auto;
     font-weight: normal; }
-    #header #header-bottom-right .user :first-letter,
-    #header #header-bottom-right #mail :first-letter,
-    #header #header-bottom-right #userbarToggle :first-letter,
-    #header #header-bottom-right .pref-lang :first-letter,
-    #header #header-bottom-right .logout :first-letter {
-      text-transform: uppercase; }
   #header .logout {
     text-transform: lowercase !important; }
     #header .logout a {
@@ -124,8 +131,6 @@ hr {
     font-size: 15px;
     text-align: center;
     margin-top: 0 !important; }
-  .side #search input[name="q"]::-webkit-input-placeholder:first-letter {
-    text-transform: uppercase; }
   .side #search input[name="q"]:active,
   .side #search input[name="q"]:focus {
     outline: none !important;
@@ -134,8 +139,6 @@ hr {
     border-radius: 1px !important;
     background-color: #FFFAE5 !important;
     border-color: #F6E69F; }
-  .side #searchexpando:first-letter {
-    text-transform: uppercase; }
   .side .morelink {
     background: none !important;
     background-color: #F0F8FF !important;
@@ -154,8 +157,6 @@ hr {
     background-color: white !important;
     font-family: normal x-small verdana, arial, helvetica, sans-serif !important;
     padding: 5px !important; }
-  .side .goldvertisement:first-letter {
-    text-transform: uppercase; }
   .side .bar, .side .bar span {
     border-radius: 1px !important; }
   .side .goldvertisement .inner {
@@ -165,8 +166,6 @@ hr {
     font-size: 12px !important;
     border-radius: 1px !important;
     border-bottom-width: 1px !important; }
-  .side .goldvertisement a:first-letter {
-    text-transform: uppercase; }
   .side .sidecontentbox .content {
     background-color: white !important;
     border-color: #c4dbf1 !important;
@@ -181,15 +180,11 @@ hr {
       display: table-cell;
       float: none;
       vertical-align: middle; }
-    .side .gadget .right:first-letter {
-      text-transform: uppercase; }
     .side .gadget .entry {
       display: table-cell !important;
       padding-left: 5px; }
   .side .account-activity-box a {
     display: block; }
-  .side .account-activity-box a:first-letter {
-    text-transform: uppercase; }
   .side .slidecontentbox .content {
     background-color: white !important; }
   .side .titlebox {

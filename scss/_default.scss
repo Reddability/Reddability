@@ -57,3 +57,19 @@ hr {
 .downmod {
 	background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png') !important;
 }
+
+// Capitalize
+.user,
+#mail,
+.pref-lang,
+.logout,
+#search input[name="q"]::-webkit-input-placeholder,
+#searchexpando,
+.goldvertisement,
+.goldvertisement a,
+.right,
+.account-activity-box a {
+	&:first-letter {
+		text-transform: uppercase;
+	}
+}

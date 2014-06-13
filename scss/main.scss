@@ -62,10 +62,6 @@
 			width: auto;
 			height: auto;
 			font-weight: normal;
-
-			:first-letter {
-				text-transform: uppercase;
-			}
 		}
 	}
 
@@ -115,10 +111,6 @@
 		margin-top: 0 !important;
 	}
 
-	#search input[name="q"]::-webkit-input-placeholder:first-letter {
-		text-transform: uppercase;
-	}
-
 	#search input[name="q"]:active,
 	#search input[name="q"]:focus {
 		outline: none !important;
@@ -129,10 +121,6 @@
 		border-radius: 1px !important;
 		background-color: #FFFAE5 !important;
 		border-color: #F6E69F;
-	}
-
-	#searchexpando:first-letter {
-		text-transform: uppercase;
 	}
 
 	.morelink {
@@ -163,10 +151,6 @@
 		padding: 5px !important;
 	}
 
-	.goldvertisement:first-letter {
-		text-transform: uppercase;
-	}
-
 	.bar, .bar span {
 		border-radius: 1px !important;
 	}
@@ -182,9 +166,6 @@
 		border-bottom-width: 1px !important;
 	}
 
-	.goldvertisement a:first-letter {
-		text-transform: uppercase;
-	}
 
 	.sidecontentbox  .content {
 		background-color: white !important;
@@ -205,10 +186,6 @@
 			vertical-align: middle;
 		}
 
-		.right:first-letter {
-			text-transform: uppercase;
-		}
-
 		.entry {
 			display: table-cell !important;
 			padding-left: 5px;
@@ -217,10 +194,6 @@
 
 	.account-activity-box a {
 		display: block; // Required for text-transform: uppercase;
-	}
-
-	.account-activity-box a:first-letter {
-		text-transform: uppercase;
 	}
 
 	.slidecontentbox .content {
