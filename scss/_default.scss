@@ -68,7 +68,9 @@ hr {
 .goldvertisement,
 .goldvertisement a,
 .right,
-.account-activity-box a {
+.account-activity-box a,
+.titlebox .bottom,
+.helplink {
 	&:first-letter {
 		text-transform: uppercase;
 	}

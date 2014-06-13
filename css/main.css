@@ -47,7 +47,9 @@ hr {
 .goldvertisement:first-letter,
 .goldvertisement a:first-letter,
 .right:first-letter,
-.account-activity-box a:first-letter {
+.account-activity-box a:first-letter,
+.titlebox .bottom:first-letter,
+.helplink:first-letter {
   text-transform: uppercase; }
 
 #header {
@@ -202,6 +204,10 @@ hr {
   margin: 5px !important; }
   .content .spacer {
     margin-bottom: 0 !important; }
+  .content .comment {
+    background-color: white !important;
+    border: 1px solid #c4dbf1 !important;
+    border-radius: 1px !important; }
   .content #siteTable {
     margin-top: 0px !important; }
     .content #siteTable .thing {

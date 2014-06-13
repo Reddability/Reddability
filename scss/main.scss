@@ -223,6 +223,12 @@
 		margin-bottom: 0 !important;
 	}
 
+	.comment {
+		background-color: white !important;
+		border: 1px solid $blue_light !important;
+		border-radius: 1px !important;
+	}
+
 	#siteTable {
 		margin-top: 0px !important;
 
@@ -237,6 +243,7 @@
 				background: white !important;
 			}
 		}
+
 		.last-clicked {
 			border: none;
 		}
