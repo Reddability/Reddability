@@ -1,10 +1,16 @@
 #header {
 
 	#userbarToggle {
+		@extend #mail;
 		background-color: transparent !important;
 		color: $blue_dark;
 		border: none;
-		@extend #mail;
+	}
+
+	#srLeftContainer,
+	#RESShortcutsViewport,
+	#RESShortcutsEditContainer {
+		@extend #sr-more-link;
 	}
 
 	#RESShortcutsEditContainer {
@@ -16,10 +22,6 @@
 		#RESShortcutsTrash,
 		#RESShortcutsLeft {
 			background: transparent !important;
-		}
-
-		#srLeftContainer, #srDropdown, #RESStaticShortcuts {
-
 		}
 	}
 }

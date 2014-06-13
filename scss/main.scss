@@ -1,6 +1,6 @@
 @import 'default';
 
-// HEADER
+// Header
 #header {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(white)) !important;
 	border-bottom: none !important;
@@ -15,7 +15,6 @@
 
 	#sr-header-area .width-clip, #sr-more-link {
 		padding: 5px !important;
-		margin-bottom: 10px;
 		background: transparent;
 	}
 
@@ -81,7 +80,7 @@
 	}
 }
 
-// SIDEBAR
+// Right Sidebar
 .side {
 	#search input[name="q"] {
 		border-radius: 1px !important;
@@ -197,7 +196,7 @@
 	}
 }
 
-// CONTENT
+// Content
 
 // Hide the left sidebar
 .listing-chooser.initialized {
@@ -284,6 +283,7 @@
 	}
 }
 
-// FOOTER
+// Footer
 
+// Support for RES
 @import 'res';

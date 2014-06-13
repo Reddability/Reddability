@@ -25,9 +25,10 @@
     height: 28px !important;
     border-bottom: none !important;
     background: transparent !important; }
-  #header #sr-header-area .width-clip, #header #sr-more-link {
+  #header #sr-header-area .width-clip, #header #sr-more-link, #header #srLeftContainer,
+  #header #RESShortcutsViewport,
+  #header #RESShortcutsEditContainer {
     padding: 5px !important;
-    margin-bottom: 10px;
     background: transparent; }
   #header #sr-header-area .sr-list {
     text-overflow: ellipsis;
