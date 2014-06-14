@@ -226,13 +226,24 @@
 	#siteTable {
 		margin-top: 0px !important;
 
-		.thing {
+		.link {
 			display: table;
 			background-color: white;
 			padding: 3px 0;
 			margin-bottom: 4px;
 			border-radius: 1px;
 			border: 1px solid $blue_light !important;
+			.entry.RES-keyNav-activeElement {
+				background: white !important;
+			}
+		}
+
+		.comment {
+			background-color: white;
+			border: 1px solid $blue_light !important;
+			margin: 0 0 5px 0;
+			padding: 5px;
+			overflow: hidden;
 			.entry.RES-keyNav-activeElement {
 				background: white !important;
 			}
