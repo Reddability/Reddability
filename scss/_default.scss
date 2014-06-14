@@ -23,6 +23,9 @@ hr {
 	box-sizing: border-box;
 	padding: 6px !important;
 	box-sizing: border-box !important;
+	-webkit-box-shadow: none !important; // Used in preferences
+	box-shadow: none !important;
+
 	&:focus, &:active {
 		outline: none;
 		border-color: $blue_dark !important;
@@ -43,12 +46,16 @@ input[type="url"] {
 	height: auto !important;
 }
 
+.preftable input {
+	width: auto !important;
+}
+
 textarea {
 	@extend .SRInput;
 	min-height: 100px !important;
 }
 
-button {
+button, select {
 	padding: 6px !important;
 	border-radius: 1px !important;
 	border: 1px solid $blue_light !important;
