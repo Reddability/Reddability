@@ -45,7 +45,7 @@ input[type="url"] {
 
 textarea {
 	@extend .SRInput;
-	min-height: 150px !important;
+	min-height: 100px !important;
 }
 
 button {
@@ -152,7 +152,9 @@ button {
 .info-notice,
 .pretty-form + h1,
 #remember-me > label,
-#remember-me > .recover-password {
+#remember-me > .recover-password,
+.bottom .age,
+#RESShortcuts, {
 	&:first-letter {
 		text-transform: uppercase !important;
 	}

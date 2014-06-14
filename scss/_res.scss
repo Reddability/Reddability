@@ -28,9 +28,7 @@
 }
 
 #REScommentSubToggle {
-    border-radius: 1px;
-    font-weight: normal;
-    text-transform: capitalize;
+	@extend button;
 }
 
 .NERPageMarker {
