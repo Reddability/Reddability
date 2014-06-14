@@ -27,8 +27,14 @@
 	}
 }
 
-#REScommentSubToggle {
+#REScommentSubToggle,
+.RESBigEditorPop {
 	@extend button;
+}
+
+.RESCloseButton {
+	@extend button;
+	padding: 0 !important;
 }
 
 .NERPageMarker {
@@ -46,6 +52,6 @@
 	margin-left: 10px;
 }
 
-.RESBigEditorPop {
-	@extend button;
+.RESDialogSmall {
+	@extend .livePreview;
 }

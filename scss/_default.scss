@@ -59,6 +59,7 @@ button {
 	&:hover, &:active, &:focus {
 		border-color: $blue_dark !important;
 		background-color: $blue_white !important;
+		outline: none !important;
 	}
 }
 
