@@ -117,12 +117,6 @@
 		border: 1px solid $blue_dark;
 	}
 
-	#searchexpando {
-		border-radius: 1px !important;
-		background-color: #FFFAE5 !important;
-		border-color: #F6E69F;
-	}
-
 	.morelink {
 		background: none !important;
 		background-color: #F0F8FF !important;
@@ -342,6 +336,30 @@
 				background-color: transparent !important;
 				.md:first-child {
 					background-color: transparent !important;
+				}
+			}
+		}
+	}
+
+	.usertext-edit {
+		width: auto !important;
+	}
+
+	.submit.content {
+		.formtabs-content {
+			width: auto !important;
+			overflow: hidden !important;
+			.roundfield {
+				width: auto !important;
+				padding: 5px !important;
+				background-color: $blue_light !important;
+				border-radius: 1px !important;
+				border-color: $blue_dark !important;
+				.title {
+					display: block; // Needed for capitalization in _default.sccss
+					float: left;
+					margin-right: 10px;
+					line-height: 27px;
 				}
 			}
 		}

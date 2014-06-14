@@ -17,6 +17,55 @@ hr {
 	margin: 10px 0 !important;
 }
 
+textarea, input[type="text"], input[type="password"], input[type="email"] {
+	border: 1px solid $blue_light !important;
+	width: 100% !important;
+	box-sizing: border-box;
+	&:focus, &:active {
+		outline: none;
+		border-color: $blue_dark !important;
+	}
+}
+
+
+
+button[name="submit"] {
+	padding: 6px !important;
+	border-radius: 1px !important;
+	border: 1px solid $blue_light !important;
+	text-transform: capitalize !important;
+	background-color: white !important;
+	color: $blue_dark !important;
+
+	&:hover, &:active, &:focus {
+		border-color: $blue_dark !important;
+		background-color: $blue_white !important;
+	}
+}
+
+.infobar {
+	border-radius: 1px !important;
+	background-color: #FFFAE5 !important;
+	border-color: #F6E69F !important;
+	color: $blue_dark;
+}
+
+.livePreview {
+		background-color: white !important;
+		background-image: none !important;
+		border: 1px solid $blue_light !important;
+		border-radius: 1px !important;
+	> h3 {
+		background-color: $blue_white !important;
+		background-image: none !important;
+		border-color: $blue_light !important;
+	}
+	> .md {
+		background-color: white !important;
+		background-image: none !important;
+	}
+}
+
 .titlebox {
 	.add, .RESshortcutside, .RESDashboardToggle {
 		padding: 3px 6px !important;
@@ -73,7 +122,8 @@ hr {
 .titlebox .bottom,
 .helplink,
 .date,
-.shortlink {
+.shortlink,
+.roundfield .title {
 	&:first-letter {
 		text-transform: uppercase;
 	}

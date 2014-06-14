@@ -43,3 +43,11 @@
 	width: 100% !important;
 	@extend .NERPageMarker;
 }
+
+.RESCharCounter {
+	margin-left: 10px;
+}
+
+.RESBigEditorPop {
+	@extend button[name="submit"];
+}
