@@ -287,7 +287,7 @@
 			}
 		}
 
-		.expando-button.video.expanded:hover {
+		.expando-button.video.expanded {
 			background-image: url($path + 'img/buttons/button_play_expanded.png') !important;
 			&:hover {
 				background-image: url($path + 'img/buttons/button_play_expanded_hover.png') !important;
@@ -301,7 +301,7 @@
 			}
 		}
 
-		.expando-button.selftext.expanded:hover {
+		.expando-button.selftext.expanded {
 			background-image: url($path + 'img/buttons/button_text_expanded.png') !important;
 			&:hover {
 				background-image: url($path + 'img/buttons/button_text_expanded_hover.png') !important;
@@ -315,7 +315,7 @@
 			}
 		}
 
-		.expando-button.image.expanded:hover {
+		.expando-button.image.expanded {
 			background-image: url($path + 'img/buttons/button_image_expanded.png') !important;
 			&:hover {
 				background-image: url($path + 'img/buttons/button_image_expanded_hover.png') !important;
