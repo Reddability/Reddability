@@ -27,8 +27,6 @@ textarea, input[type="text"], input[type="password"], input[type="email"] {
 	}
 }
 
-
-
 button[name="submit"] {
 	padding: 6px !important;
 	border-radius: 1px !important;
@@ -48,6 +46,12 @@ button[name="submit"] {
 	background-color: #FFFAE5 !important;
 	border-color: #F6E69F !important;
 	color: $blue_dark;
+}
+
+.info-notice {
+	border-radius: 1px !important;
+	background-color: $blue_white !important;
+	border: 1px solid $blue_light;
 }
 
 .livePreview {
@@ -123,8 +127,10 @@ button[name="submit"] {
 .helplink,
 .date,
 .shortlink,
-.roundfield .title {
+.roundfield .title,
+.info-notice,
+.pretty-form + h1 {
 	&:first-letter {
-		text-transform: uppercase;
+		text-transform: uppercase !important;
 	}
 }

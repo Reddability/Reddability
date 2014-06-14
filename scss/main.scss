@@ -349,17 +349,23 @@
 		.formtabs-content {
 			width: auto !important;
 			overflow: hidden !important;
-			.roundfield {
-				width: auto !important;
-				padding: 5px !important;
-				background-color: $blue_light !important;
-				border-radius: 1px !important;
-				border-color: $blue_dark !important;
-				.title {
-					display: block; // Needed for capitalization in _default.sccss
-					float: left;
-					margin-right: 10px;
-					line-height: 27px;
+			.spacer {
+				margin-bottom: 5px !important;
+				.roundfield, & + .roundfield {
+					width: auto !important;
+					padding: 5px !important;
+					background-color: $blue_light !important;
+					border-radius: 1px !important;
+					border-color: $blue_dark !important;
+					.title {
+						display: block; // Needed for capitalization in _default.sccss
+						float: left;
+						margin-right: 10px;
+						line-height: 27px;
+					}
+					&.captcha {
+						margin-bottom: 5px !important;
+					}
 				}
 			}
 		}
