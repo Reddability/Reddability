@@ -327,49 +327,6 @@
 				background-image: url($path + 'img/buttons/button_image_expanded_hover.png') !important;
 			}
 		}
-
-		/*
-		.expando-button.selftext {
-			font-size: 13px !important;
-			display: table-cell !important;
-			text-align: center !important;
-			background: transparent !important;
-			vertical-align: middle !important;
-			border: 1px solid $blue_dark !important;
-			width: 24px !important;
-			color: $blue_dark !important;
-			height: 24px !important;
-			line-height: 18px !important;
-			-webkit-box-sizing: border-box !important;
-			border-radius: 1px !important;
-			padding: 0 1px 0 2px !important;
-		}
-
-		.expando-button.selftext:before {
-			position: absolute;
-			display: table-cell;
-			padding: 5px 0 0 1px;
-			content: "Aa" !important;
-			vertical-align: sub !important;
-		}
-
-		$plus_padding: 12px;
-		.expando-button.selftext:after {
-			content: "+" !important;
-			font-size: 9px !important;
-			line-height: 0px !important;
-			vertical-align: super !important;
-			padding: 5px 0 0 $plus_padding;
-			position: absolute;
-			display: table-cell;
-		}
-
-		.expando-button.selftext.expanded:after {
-			content: "-" !important;
-			padding-left: $plus_padding + 2;
-		}
-		*/
-
 	}
 
 	.commentarea {
