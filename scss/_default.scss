@@ -5,6 +5,7 @@ $gray: #888;
 $lightgray: #F3F3F3;
 $green: #79B949;
 $red: #D16063;
+$path: 'chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/';
 
 html, body {
 	background-color: $lightgray !important;
@@ -44,18 +45,18 @@ hr {
 }
 
 .arrow.up {
-	background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up.png') !important;
+	background-image: url($path + 'img/arrows/arrow_up.png') !important;
 }
 
 .upmod {
-	background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_up_vote.png') !important;
+	background-image: url($path + 'img/arrows/arrow_up_vote.png') !important;
 }
 
 .arrow.down {
-	background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down.png') !important;
+	background-image: url($path + 'img/arrows/arrow_down.png') !important;
 }
 .downmod {
-	background-image: url('chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/img/arrows/arrow_down_vote.png') !important;
+	background-image: url($path + 'img/arrows/arrow_down_vote.png') !important;
 }
 
 // Capitalize

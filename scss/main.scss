@@ -281,6 +281,54 @@
 			max-width: none;
 		}
 
+		.expando-button {
+			background-position: 0 !important;
+			background-size: contain !important;
+		}
+
+		.expando-button.video.collapsed {
+			background-image: url($path + 'img/buttons/button_play_collapsed.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_play_collapsed_hover.png') !important;
+			}
+		}
+
+		.expando-button.video.expanded:hover {
+			background-image: url($path + 'img/buttons/button_play_expanded.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_play_expanded_hover.png') !important;
+			}
+		}
+
+		.expando-button.selftext.collapsed {
+			background-image: url($path + 'img/buttons/button_text_collapsed.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_text_collapsed_hover.png') !important;
+			}
+		}
+
+		.expando-button.selftext.expanded:hover {
+			background-image: url($path + 'img/buttons/button_text_expanded.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_text_expanded_hover.png') !important;
+			}
+		}
+
+		.expando-button.image.collapsed {
+			background-image: url($path + 'img/buttons/button_image_collapsed.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_image_collapsed_hover.png') !important;
+			}
+		}
+
+		.expando-button.image.expanded:hover {
+			background-image: url($path + 'img/buttons/button_image_expanded.png') !important;
+			&:hover {
+				background-image: url($path + 'img/buttons/button_image_expanded_hover.png') !important;
+			}
+		}
+
+		/*
 		.expando-button.selftext {
 			font-size: 13px !important;
 			display: table-cell !important;
@@ -320,6 +368,8 @@
 			content: "-" !important;
 			padding-left: $plus_padding + 2;
 		}
+		*/
+
 	}
 
 	.commentarea {
