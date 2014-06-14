@@ -25,9 +25,15 @@ input[type="url"] {
 	border: 1px solid $blue_light !important;
 	width: 100% !important;
 	box-sizing: border-box;
+	padding: 6px !important;
+	box-sizing: border-box !important;
+	height: auto !important;
 	&:focus, &:active {
 		outline: none;
 		border-color: $blue_dark !important;
+	}
+	&::-webkit-input-placeholder:first-letter {
+		text-transform: uppercase;
 	}
 }
 
@@ -133,7 +139,9 @@ button {
 .shortlink,
 .roundfield .title,
 .info-notice,
-.pretty-form + h1 {
+.pretty-form + h1,
+#remember-me > label,
+#remember-me > .recover-password {
 	&:first-letter {
 		text-transform: uppercase !important;
 	}
