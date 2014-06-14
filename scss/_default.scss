@@ -17,17 +17,12 @@ hr {
 	margin: 10px 0 !important;
 }
 
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"] {
+.SRInput {
 	border: 1px solid $blue_light !important;
 	width: 100% !important;
 	box-sizing: border-box;
 	padding: 6px !important;
 	box-sizing: border-box !important;
-	height: auto !important;
 	&:focus, &:active {
 		outline: none;
 		border-color: $blue_dark !important;
@@ -35,6 +30,22 @@ input[type="url"] {
 	&::-webkit-input-placeholder:first-letter {
 		text-transform: uppercase;
 	}
+	:not(textarea) {
+		border-color: red !important;
+	}
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
+	@extend .SRInput;
+	height: auto !important;
+}
+
+textarea {
+	@extend .SRInput;
+	min-height: 150px !important;
 }
 
 button {
