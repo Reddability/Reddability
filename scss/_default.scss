@@ -143,6 +143,8 @@ button, select, input[type="submit"] {
 .expando-button {
 	$expando_width: 24px;
 
+	min-width: $expando_width !important;
+	min-height: $expando_width !important;
 	width: $expando_width !important;
 	height: $expando_width !important;
 	background-size: 144px !important;
@@ -180,6 +182,7 @@ button, select, input[type="submit"] {
 	}
 
 	&.image.collapsed {
+		width: $expando_width !important;
 		background-position-x: -4 * $expando_width !important;
 		&:hover {
 			background-position-y: -$expando_width !important;
@@ -187,6 +190,7 @@ button, select, input[type="submit"] {
 	}
 
 	&.image.expanded {
+		width: $expando_width !important;
 		background-position-x: -5 * $expando_width !important;
 		&:hover {
 			background-position-y: -$expando_width !important;
