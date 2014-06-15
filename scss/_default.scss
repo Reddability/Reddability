@@ -140,6 +140,60 @@ button, select, input[type="submit"] {
 	background-image: url($path + 'img/arrows/arrow_down_vote.png') !important;
 }
 
+.expando-button {
+	$expando_width: 24px;
+
+	width: $expando_width !important;
+	height: $expando_width !important;
+	background-size: 144px !important;
+	background-image: url($path + 'img/buttons/buttons.png') !important;
+	background-position-y: 0 !important;
+	background-repeat: no-repeat !important;
+
+
+	&.video.collapsed {
+		background-position-x: 0 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+
+	&.video.expanded {
+		background-position-x: -1 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+
+	&.selftext.collapsed {
+		background-position-x: -2 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+
+	&.selftext.expanded {
+		background-position-x: -3 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+
+	&.image.collapsed {
+		background-position-x: -4 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+
+	&.image.expanded {
+		background-position-x: -5 * $expando_width !important;
+		&:hover {
+			background-position-y: -$expando_width !important;
+		}
+	}
+}
+
 // Capitalize
 .user,
 #mail,
