@@ -15,6 +15,6 @@
 	"web_accessible_resources": [
 		"img/favicon.ico",
 		"img/arrows/arrow_*.png",
-		"img/buttons/button_*.png"
+		"img/buttons/buttons.png"
 	]
 }

@@ -237,6 +237,9 @@
 			.entry.RES-keyNav-activeElement {
 				background: white !important;
 			}
+			.flat-list {
+				padding: 2px 0 !important; // This somehow undoes the stutter effect when opening the expando
+			}
 		}
 
 		.comment {
@@ -286,49 +289,56 @@
 		}
 
 		.expando-button {
-			background-position: 0 !important;
-			background-size: contain !important;
-		}
+			$expando_width: 24px;
 
-		.expando-button.video.collapsed {
-			background-image: url($path + 'img/buttons/button_play_collapsed.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_play_collapsed_hover.png') !important;
+			width: $expando_width !important;
+			height: $expando_width !important;
+			background-size: 144px !important;
+			background-image: url($path + 'img/buttons/buttons.png') !important;
+			background-position-y: 0 !important;
+			background-repeat: no-repeat !important;
+
+
+			&.video.collapsed {
+				background-position-x: 0 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
-		}
 
-		.expando-button.video.expanded {
-			background-image: url($path + 'img/buttons/button_play_expanded.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_play_expanded_hover.png') !important;
+			&.video.expanded {
+				background-position-x: -1 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
-		}
 
-		.expando-button.selftext.collapsed {
-			background-image: url($path + 'img/buttons/button_text_collapsed.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_text_collapsed_hover.png') !important;
+			&.selftext.collapsed {
+				background-position-x: -2 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
-		}
 
-		.expando-button.selftext.expanded {
-			background-image: url($path + 'img/buttons/button_text_expanded.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_text_expanded_hover.png') !important;
+			&.selftext.expanded {
+				background-position-x: -3 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
-		}
 
-		.expando-button.image.collapsed {
-			background-image: url($path + 'img/buttons/button_image_collapsed.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_image_collapsed_hover.png') !important;
+			&.image.collapsed {
+				background-position-x: -4 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
-		}
 
-		.expando-button.image.expanded {
-			background-image: url($path + 'img/buttons/button_image_expanded.png') !important;
-			&:hover {
-				background-image: url($path + 'img/buttons/button_image_expanded_hover.png') !important;
+			&.image.expanded {
+				background-position-x: -5 * $expando_width !important;
+				&:hover {
+					background-position-y: -$expando_width !important;
+				}
 			}
 		}
 	}
