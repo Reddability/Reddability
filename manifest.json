@@ -16,5 +16,8 @@
 		"img/favicon.ico",
 		"img/arrows/arrow_*.png",
 		"img/buttons/buttons.png"
+	],
+	"permissions": [
+		"storage"
 	]
 }
