@@ -5,7 +5,7 @@ $gray: #888;
 $lightgray: #F3F3F3;
 $green: #79B949;
 $red: #D16063;
-$path: 'chrome-extension://flfdbombebgijiipbdejcdjffnebcbia/';
+$path: 'chrome-extension://__MSG_@@extension_id__/';
 
 html, body {
 	background-color: $lightgray !important;
