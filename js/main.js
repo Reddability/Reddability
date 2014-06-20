@@ -15,8 +15,8 @@ $(document).ready(function() {
 });
 
 function setSidebar(hide) {
-	var isHidden = $(sidebarHide).hasClass(sidebarHiddenClass);
-	if(isHidden || hide === false) {
+	var isHidden = $(sidebarHide).hasClass(sidebarHiddenClass) || hide === false;
+	if(isHidden) {
 		$(sidebarHide).text(sidebarVisibleText);
 		$(sidebar).show();
 		$(sidebarHide).removeClass(sidebarHiddenClass);
@@ -30,6 +30,7 @@ function setSidebar(hide) {
 
 function saveSidebarSettings(hide) {
 	chrome.storage.local.set({'hide': hide}, function() {
+		console.log('Set: ' + hide);
 		if(chrome.runtime.lastError !== undefined)
 			console.log('Something went wrong when setting the hide variable in the local storage: ' + chrome.runtime.lastError);
 	});
@@ -37,6 +38,7 @@ function saveSidebarSettings(hide) {
 
 function updateSidebar() {
 	chrome.storage.local.get('hide', function(result) {
+		console.log('Got: ' + result.hide);
 		if(chrome.runtime.lastError !== undefined)
 			console.log('Something went wrong when getting the hide variable in the local storage: ' + chrome.runtime.lastError);
 		else

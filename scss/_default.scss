@@ -108,9 +108,16 @@ button, select, input[type="submit"] {
 		text-transform: capitalize !important;
 
 	}
-	.remove {
-		@extend .add;
-		background-color: $red !important;
+}
+
+.remove {
+	@extend .add;
+	background-color: $red !important;
+}
+
+.gilded-link, .giftgold {
+	a {
+		font-weight: normal !important;
 	}
 }
 
