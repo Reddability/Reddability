@@ -1,0 +1,11 @@
+{
+	"description": {
+		"message": "Reddit, maar leesbaar."
+	},
+	"hide_sidebar": {
+		"message": "Verberg zijbalk"
+	},
+	"show_sidebar": {
+		"message": "Toon zijbalk"
+	}
+}

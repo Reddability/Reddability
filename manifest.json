@@ -2,8 +2,10 @@
 	"manifest_version": 2,
 
 	"name": "Reddability",
-	"description": "Reddit, but readably.",
+	"description": "__MSG_description__",
 	"version": "1.0.0",
+
+	"default_locale": "en",
 
 	"content_scripts": [
 		{

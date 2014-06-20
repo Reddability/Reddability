@@ -1,0 +1,11 @@
+{
+	"description": {
+		"message": "Reddit, mais lisible."
+	},
+	"hide_sidebar": {
+		"message": "Cachez barre latérale"
+	},
+	"show_sidebar": {
+		"message": "Montrez barre latérale"
+	}
+}

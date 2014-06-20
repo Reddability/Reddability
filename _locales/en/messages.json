@@ -1,0 +1,11 @@
+{
+	"description": {
+		"message": "Reddit, but readable."
+	},
+	"hide_sidebar": {
+		"message": "Hide sidebar"
+	},
+	"show_sidebar": {
+		"message": "Show sidebar"
+	}
+}

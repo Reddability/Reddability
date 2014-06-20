@@ -1,0 +1,11 @@
+{
+	"description": {
+		"message": "Reddit, mais lisible."
+	},
+	"hide_sidebar": {
+		"message": "Randleiste verstecken"
+	},
+	"show_sidebar": {
+		"message": "Randleiste anzeigen"
+	}
+}
