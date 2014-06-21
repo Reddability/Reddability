@@ -4,6 +4,7 @@
 	"name": "Reddability",
 	"description": "__MSG_description__",
 	"version": "1.0.0",
+	"author": "Andreas Backx",
 
 	"icons": {
 		"128": "img/webstore/app_icon.png"
