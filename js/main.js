@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	updateSidebar();
 
-	$(sidebarHide).on('click', setSidebar);
+	$(sidebarHide).on('click', function(event) { event.preventDefault(); setSidebar(); });
 });
 
 function setSidebar(hide) {
