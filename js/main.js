@@ -1,6 +1,5 @@
 var sidebar_show_text = chrome.i18n.getMessage('show_sidebar');
 var sidebar_hide_text = chrome.i18n.getMessage('hide_sidebar');
-console.log(sidebar_show_text);
 var sidebarHiddenClass = 'sidebar-hidden';
 var sidebarHide = '#sidebar-hide';
 var sidebar = $('.side');
@@ -8,7 +7,7 @@ var sidebar = $('.side');
 $(document).ready(function() {
 	$('.side #search input[name="q"]').attr('autocomplete', 'off');
 
-	$('.flat-list.hover li').append('<a href="#" id="sidebar-hide" class="pref-lang">' + sidebar_hide_text + '</a>');
+	$('#header-bottom-right .flat-list.hover li').append('<a href="#" id="sidebar-hide" class="pref-lang">' + sidebar_hide_text + '</a>');
 
 	updateSidebar();
 
