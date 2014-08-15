@@ -69,6 +69,33 @@ button, select, input[type="submit"] {
 	}
 }
 
+// SPOILERS
+// Additional classes are to fix the cutoff blur that occurs
+a[href$="/s"], a[href$="/spoiler"] {
+	cursor: default;
+	color: transparent !important;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	&:hover {
+		color: black !important;
+		text-shadow: none;
+	}
+}
+
+.noncollapsed {
+	margin-left: 7px;
+}
+
+.midcol {
+	margin-right: 0 !important;
+}
+
+.md {
+	padding-left: 10px;
+	margin-left: -10px;
+}
+
+// END SPOILERS
+
 .infobar {
 	border-radius: 1px !important;
 	background-color: #FFFAE5 !important;
