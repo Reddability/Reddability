@@ -70,7 +70,7 @@ button, select, input[type="submit"] {
 }
 
 // SPOILERS
-// Additional classes are to fix the cutoff blur that occurs
+// Additional classes are there to fix the cutoff blur that occurs
 a[href$="/s"], a[href$="/spoiler"] {
 	cursor: default;
 	color: transparent !important;
@@ -90,8 +90,8 @@ a[href$="/s"], a[href$="/spoiler"] {
 }
 
 .md {
-	padding-left: 10px;
-	margin-left: -10px;
+	padding-left: 10px !important;
+	margin-left: -10px !important;
 }
 
 // END SPOILERS
