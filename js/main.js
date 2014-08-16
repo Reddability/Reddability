@@ -1,3 +1,4 @@
+// Hide/show sidebar
 var sidebar_show_text = chrome.i18n.getMessage('show_sidebar');
 var sidebar_hide_text = chrome.i18n.getMessage('hide_sidebar');
 var sidebarHiddenClass = 'sidebar-hidden';

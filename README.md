@@ -14,6 +14,7 @@ Besides the clean look, I often have Reddit open on one of the sides of my lapto
  - Fixes to make everything align better.
  - Full Reddit Enhancement Suite (RES) support.
  - Capitalization has been taken care of (mostly).
+ - Spoiler tags used on some subreddits are supported.
  - Current localization for English, German, French and Dutch.
 
 Feel free to fork the repository or issue any suggestions or bugs.

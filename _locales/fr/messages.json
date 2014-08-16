@@ -7,5 +7,17 @@
 	},
 	"show_sidebar": {
 		"message": "Montrez barre latérale"
+	},
+	"install_title": {
+		"message": "Thank you for using Reddability"
+	},
+	"install_title": {
+		"message": "Merci d'utiliser Reddability"
+	},
+	"install_message": {
+		"message": "Veuillez désactiver les styles de subreddits personnalisés dans vos préférences Reddit afin d'utiliser Reddability."
+	},
+	"install_button": {
+		"message": "Je le ferai, merci."
 	}
 }

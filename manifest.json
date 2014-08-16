@@ -3,11 +3,12 @@
 
 	"name": "Reddability",
 	"description": "__MSG_description__",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "Andreas Backx",
 
 	"icons": {
-		"128": "img/webstore/app_icon.png"
+		"128": "img/webstore/app_icon.png",
+		"256": "img/webstore/app_iconx256.png"
 	},
 
 	"default_locale": "en",
@@ -19,11 +20,16 @@
 			"css": ["css/main.css"]
 		}
 	],
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
 	"web_accessible_resources": [
 		"img/arrows/arrow_*.png",
 		"img/buttons/buttons.png"
 	],
 	"permissions": [
-		"storage"
+		"storage",
+		"notifications"
 	]
 }

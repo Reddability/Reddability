@@ -89,7 +89,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 	margin-right: 0 !important;
 }
 
-.md {
+.md > * {
 	padding-left: 10px !important;
 	margin-left: -10px !important;
 }

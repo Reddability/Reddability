@@ -7,5 +7,14 @@
 	},
 	"show_sidebar": {
 		"message": "Toon zijbalk"
+	},
+	"install_title": {
+		"message": "Bedankt om Reddability te gebruiken"
+	},
+	"install_message": {
+		"message": "Gelieve aangepaste subreddit stijlen uit te schakelen om Reddability te gebruiken."
+	},
+	"install_button": {
+		"message": "Zal ik doen, bedankt."
 	}
 }

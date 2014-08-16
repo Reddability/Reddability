@@ -7,5 +7,14 @@
 	},
 	"show_sidebar": {
 		"message": "Randleiste anzeigen"
+	},
+	"install_title": {
+		"message": "Danke, dass Sie Reddability benutzen"
+	},
+	"install_message": {
+		"message": "Bitte deaktivieren Sie Subreddit-spezifische Layouts in Ihren Reddit-Einstellungen, um Reddability zu benutzen."
+	},
+	"install_button": {
+		"message": "Ja, danke."
 	}
 }
