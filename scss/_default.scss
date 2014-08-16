@@ -253,7 +253,15 @@ a[href$="/s"], a[href$="/spoiler"] {
 #remember-me > label,
 #remember-me > .recover-password,
 .bottom .age,
-#RESShortcuts, {
+#RESShortcuts {
+	&:first-letter {
+		text-transform: uppercase !important;
+	}
+}
+
+// :first-letter doesn't work on inline elements, these are 'converted' to block elements
+.content .commentarea .panestack-title .title {
+	display: inline-block !important;
 	&:first-letter {
 		text-transform: uppercase !important;
 	}

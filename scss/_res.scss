@@ -27,9 +27,72 @@
 	}
 }
 
+.commentingAs {
+	margin: 0 !important;
+	line-height: 27px !important;
+}
+
+.RESMacroWrappingSpan {
+	margin: 0 !important;
+}
+
+.markdownEditor-wrapper {
+	margin-bottom: 6px !important;
+	.markdownEditor {
+		.edit-btn {
+			$editHeight: 25px;
+			height: 25px !important;
+			border-radius: 1px !important;
+			border: 1px solid $blue_light !important;
+			background-image: url($path + 'img/buttons/markdown.png') !important;
+			background-size: 32px 250px !important;
+			background-position-x: 0;
+			&:hover {
+				border-color: $blue_dark !important;
+			}
+			&.btn-bold {
+				background-position-y: ($editHeight * -0) !important;
+			}
+			&.btn-italic {
+				background-position-y: ($editHeight * -1) !important;
+			}
+			&.btn-strike {
+				background-position-y: ($editHeight * -2) !important;
+			}
+			&.btn-superscript {
+				background-position-y: ($editHeight * -3) !important;
+			}
+			&.btn-link {
+				background-position-y: ($editHeight * -4) !important;
+			}
+			&.btn-quote {
+				background-position-y: ($editHeight * -5) !important;
+			}
+			&.btn-code {
+				background-position-y: ($editHeight * -6) !important;
+			}
+			&.btn-list-unordered {
+				background-position-y: ($editHeight * -7) !important;
+			}
+			&.btn-list-ordered {
+				background-position-y: ($editHeight * -8) !important;
+			}
+			&.btn-table {
+				background-position-y: ($editHeight * -9) !important;
+			}
+		}
+	}
+}
+
 #REScommentSubToggle,
 .RESBigEditorPop {
 	@extend button;
+}
+
+.RESBigEditorPop {
+	background-image: url($path + 'img/buttons/fullscreen.png') !important;
+	background-size: 12px !important;
+	background-position: 7px 50% !important;
 }
 
 .RESCloseButton {
@@ -49,7 +112,10 @@
 }
 
 .RESCharCounter {
-	margin-left: 10px;
+	margin-left: 10px !important;
+	margin-bottom: 0 !important;
+	line-height: 22px !important;
+	font-size: 100% !important;
 }
 
 .RESDialogSmall {

@@ -300,6 +300,15 @@
 	.commentarea {
 		overflow-x: hidden;
 
+		.bottom-area {
+			margin-top: 3px !important;
+			line-height: 27px !important;
+			span, a, button {
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+			}
+		}
+
 		.comment {
 			background-color: white !important;
 			border: 1px solid $blue_light !important;

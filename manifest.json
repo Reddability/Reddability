@@ -26,7 +26,9 @@
 	},
 	"web_accessible_resources": [
 		"img/arrows/arrow_*.png",
-		"img/buttons/buttons.png"
+		"img/buttons/buttons.png",
+		"img/buttons/markdown.png",
+		"img/buttons/fullscreen.png"
 	],
 	"permissions": [
 		"storage",
