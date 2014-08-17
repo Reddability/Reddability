@@ -27,6 +27,10 @@
 	}
 }
 
+#RESShortcutsAddFormContainer {
+	z-index: 2147483648 !important; // Needs to be above #header
+}
+
 .commentingAs {
 	margin: 0 0 0 10px !important;
 	line-height: 27px !important;
