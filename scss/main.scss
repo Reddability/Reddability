@@ -99,9 +99,15 @@
 		margin: 5px 0 !important;
 		padding: 0 !important;
 		background-image: url($path + 'img/buttons/mail.png') !important;
-		background-position: 0 0 !important;
+		background-position-x: 0 !important;
 		background-size: 15px 20px !important;
 		background-repeat: no-repeat !important;
+		&.nohavemail {
+			background-position-y: 0 !important;
+		}
+		&.havemail {
+			background-position-y: -10px !important;
+		}
 	}
 }
 
