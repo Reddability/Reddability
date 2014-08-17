@@ -4,6 +4,7 @@ $blue_dark: #369;
 $gray: #888;
 $lightgray: #F3F3F3;
 $green: #79B949;
+$green_light: #EDFFDF;
 $red: #D16063;
 $path: 'chrome-extension://__MSG_@@extension_id__/';
 
@@ -69,6 +70,12 @@ button, select, input[type="submit"] {
 	}
 }
 
+.collapse-button {
+	border-radius: 1px !important;
+	border-color: $gray !important;
+	color: $gray !important;
+}
+
 // SPOILERS
 // Additional classes are there to fix the cutoff blur that occurs
 a[href$="/s"], a[href$="/spoiler"] {
@@ -89,9 +96,10 @@ a[href$="/s"], a[href$="/spoiler"] {
 	margin-right: 0 !important;
 }
 
-.md > * {
+.md > p {
 	padding-left: 10px !important;
 	margin-left: -10px !important;
+	display: block !important;
 }
 
 // END SPOILERS
@@ -260,7 +268,10 @@ a[href$="/s"], a[href$="/spoiler"] {
 }
 
 // :first-letter doesn't work on inline elements, these are 'converted' to block elements
-.content .commentarea .panestack-title .title {
+.content .commentarea .panestack-title .title,
+.wikititle,
+.wikiaction,
+#wikiactions .content li ul a {
 	display: inline-block !important;
 	&:first-letter {
 		text-transform: uppercase !important;

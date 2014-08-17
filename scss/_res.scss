@@ -28,7 +28,7 @@
 }
 
 .commentingAs {
-	margin: 0 !important;
+	margin: 0 0 0 10px !important;
 	line-height: 27px !important;
 }
 
@@ -47,8 +47,10 @@
 			background-image: url($path + 'img/buttons/markdown.png') !important;
 			background-size: 32px 250px !important;
 			background-position-x: 0;
-			&:hover {
+			&:hover, &:active, &:focus {
 				border-color: $blue_dark !important;
+				background-color: $blue_white !important;
+				outline: none !important;
 			}
 			&.btn-bold {
 				background-position-y: ($editHeight * -0) !important;
@@ -114,7 +116,7 @@
 .RESCharCounter {
 	margin-left: 10px !important;
 	margin-bottom: 0 !important;
-	line-height: 22px !important;
+	line-height: 27px !important;
 	font-size: 100% !important;
 }
 
@@ -125,7 +127,7 @@
 .RESDropdownList, #RESPrefsDropdown {
 	background-color: white !important;
 	border: 1px solid $blue_dark !important;
-	z-index: 1000; // Under the options wheel thingy
+	z-index: 1000 !important; // Under the options wheel thingy
 	border-radius: 1px !important;
 }
 
@@ -178,18 +180,42 @@
 }
 
 .RESMacroDropdown {
+	border: 1px solid $blue_white !important;
+	border-radius: 1px;
+	margin-top: 12px !important;
+
+	&:hover {
+		border-color: $blue_dark !important;
+		li {
+			&:first-of-type {
+				border-top: none !important;
+			}
+			border-color: $blue_dark !important;
+			border-top: 1px solid $blue_dark !important;
+			&:first-of-type {
+				border-top: none !important;
+			}
+		}
+	}
+
 	.RESMacroDropdownTitleOverlay {
 		@extend .RESMacroDropdownTitle;
 		border-bottom: none !important;
 	}
+
 	.RESMacroDropdownList {
 		@extend .RESDropdownList;
+		border-color: $blue_white !important;
+		border-right: none !important;
+		border-left: none !important;
 		li {
+			border-color: $blue_white !important;
 			&:last-child {
 				border-bottom: none !important;
 			}
 			&:hover {
 				background-color: $blue_white !important;
+				border-color: $blue_dark !important;
 			}
 			&:first-letter {
 				text-transform: uppercase !important;
