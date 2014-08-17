@@ -168,18 +168,18 @@ a[href$="/s"], a[href$="/spoiler"] {
 }
 
 .arrow.up {
-	background-image: url($path + 'img/arrows/arrow_up.png') !important;
+	background-image: url($path + 'img/buttons/arrow_up.png') !important;
 }
 
 .upmod {
-	background-image: url($path + 'img/arrows/arrow_up_vote.png') !important;
+	background-image: url($path + 'img/buttons/arrow_up_vote.png') !important;
 }
 
 .arrow.down {
-	background-image: url($path + 'img/arrows/arrow_down.png') !important;
+	background-image: url($path + 'img/buttons/arrow_down.png') !important;
 }
 .downmod {
-	background-image: url($path + 'img/arrows/arrow_down_vote.png') !important;
+	background-image: url($path + 'img/buttons/arrow_down_vote.png') !important;
 }
 
 .expando-button {

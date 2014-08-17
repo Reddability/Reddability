@@ -26,15 +26,25 @@
 	    display: block;
 	}
 
-	.tabmenu li a {
-		font-weight: normal !important;
-		background-color: transparent !important;
-		border: none !important;
-		text-transform: capitalize !important;
-		// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
-		display: block;
-		float: left;
-		padding: 0 10px !important;
+	#header-bottom-left {
+		#header-img.default-header {
+			background-image: url($path + 'img/reddit/reddit_logo.png') !important;
+			background-size: auto 40px !important;
+			background-position: center !important;
+			width: 135px !important;
+			margin: 5px 0 0 0 !important;
+		}
+
+		.tabmenu li a {
+			font-weight: normal !important;
+			background-color: transparent !important;
+			border: none !important;
+			text-transform: capitalize !important;
+			// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
+			display: block;
+			float: left;
+			padding: 0 10px !important;
+		}
 	}
 
 	#header-bottom-right {
@@ -62,32 +72,36 @@
 			width: auto;
 			height: auto;
 			font-weight: normal;
-			margin: 0 !important;
+			margin: 0;
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
+		}
+
+		.user {
+			margin-left: 10px !important; // Spacing between userbarToggle from RES and the username
 		}
 	}
 
 	.logout {
 		text-transform: lowercase !important; // Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
 		a {
-			display: block;
+			display: block; // For :first-letter uppercase
 		}
 	}
 
 	.userkarma {
-		width: 100%;
-		border-bottom: none;
+		border-bottom: none; // Removes the dotted bottom border below your karma
 	}
 
 	#mail {
-		position: relative;
-		padding-left: 0 !important;
-		margin-left: 5px !important;
-		width: 15px !important;
-		height: 22px !important;
-		top: 7px;
+		height: 10px !important;
+		margin: 5px 0 !important;
+		padding: 0 !important;
+		background-image: url($path + 'img/buttons/mail.png') !important;
+		background-position: 0 0 !important;
+		background-size: 15px 20px !important;
+		background-repeat: no-repeat !important;
 	}
 }
 

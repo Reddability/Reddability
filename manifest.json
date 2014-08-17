@@ -25,10 +25,12 @@
 		"persistent": false
 	},
 	"web_accessible_resources": [
-		"img/arrows/arrow_*.png",
+		"img/buttons/arrow_*.png",
 		"img/buttons/buttons.png",
 		"img/buttons/markdown.png",
-		"img/buttons/fullscreen.png"
+		"img/buttons/fullscreen.png",
+		"img/buttons/mail.png",
+		"img/reddit/reddit_logo.png"
 	],
 	"permissions": [
 		"storage",

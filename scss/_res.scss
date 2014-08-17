@@ -1,11 +1,10 @@
 #header {
 
 	#userbarToggle {
-		@extend #mail;
 		background-color: transparent !important;
 		color: $blue_dark;
 		border: none;
-		top: 0;
+		margin-bottom: -3px !important;
 	}
 
 	#srLeftContainer,
