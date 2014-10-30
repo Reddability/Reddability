@@ -26,7 +26,7 @@
 	}
 }
 
-#RESShortcutsAddFormContainer {
+#RESShortcutsAddFormContainer, #srList {
 	z-index: 2147483648 !important; // Needs to be above #header
 }
 
@@ -39,51 +39,57 @@
 	margin: 0 !important;
 }
 
-.markdownEditor-wrapper {
-	margin-bottom: 6px !important;
-	.markdownEditor {
-		.edit-btn {
-			$editHeight: 25px;
-			height: 25px !important;
-			border-radius: 1px !important;
-			border: 1px solid $blue_light !important;
-			background-image: url($path + 'img/buttons/markdown.png') !important;
-			background-size: 32px 250px !important;
-			background-position-x: 0;
-			&:hover, &:active, &:focus {
-				border-color: $blue_dark !important;
-				background-color: $blue_white !important;
-				outline: none !important;
-			}
-			&.btn-bold {
-				background-position-y: ($editHeight * -0) !important;
-			}
-			&.btn-italic {
-				background-position-y: ($editHeight * -1) !important;
-			}
-			&.btn-strike {
-				background-position-y: ($editHeight * -2) !important;
-			}
-			&.btn-superscript {
-				background-position-y: ($editHeight * -3) !important;
-			}
-			&.btn-link {
-				background-position-y: ($editHeight * -4) !important;
-			}
-			&.btn-quote {
-				background-position-y: ($editHeight * -5) !important;
-			}
-			&.btn-code {
-				background-position-y: ($editHeight * -6) !important;
-			}
-			&.btn-list-unordered {
-				background-position-y: ($editHeight * -7) !important;
-			}
-			&.btn-list-ordered {
-				background-position-y: ($editHeight * -8) !important;
-			}
-			&.btn-table {
-				background-position-y: ($editHeight * -9) !important;
+.usertext-edit {
+	.markdownEditor-wrapper {
+		margin-bottom: 6px !important;
+		width: auto !important;
+		.markdownEditor {
+			.edit-btn {
+				$edit_height: 25px;
+				height: $edit_height !important;
+				border-radius: 1px !important;
+				border: 1px solid $blue_light !important;
+				background-image: url($path + 'img/buttons/markdown.png') !important;
+				background-size: 32px 250px !important;
+				// For some reason overflow: hidden hides the border, but having it visible
+				// shows the text, so we're setting the text color to transparent.
+				//overflow: visible !important;
+				//color: transparent !important;
+				&:hover, &:active, &:focus {
+					border-color: $blue_dark !important;
+					background-color: $blue_white !important;
+					outline: none !important;
+				}
+				&.btn-bold {
+					background-position: 0 ($edit_height * -0) !important;
+				}
+				&.btn-italic {
+					background-position: 0 ($edit_height * -1) !important;
+				}
+				&.btn-strike {
+					background-position: 0 ($edit_height * -2) !important;
+				}
+				&.btn-superscript {
+					background-position: 0 ($edit_height * -3) !important;
+				}
+				&.btn-link {
+					background-position: 0 ($edit_height * -4) !important;
+				}
+				&.btn-quote {
+					background-position: 0 ($edit_height * -5) !important;
+				}
+				&.btn-code {
+					background-position: 0 ($edit_height * -6) !important;
+				}
+				&.btn-list-unordered {
+					background-position: 0 ($edit_height * -7) !important;
+				}
+				&.btn-list-ordered {
+					background-position: 0 ($edit_height * -8) !important;
+				}
+				&.btn-table {
+					background-position: 0 ($edit_height * -9) !important;
+				}
 			}
 		}
 	}
@@ -125,6 +131,11 @@
 
 .RESDialogSmall {
 	@extend .livePreview;
+}
+
+// Cog image to open the preference dropdown
+#openRESPrefs {
+	margin-top: 2px !important;
 }
 
 .RESDropdownList, #RESPrefsDropdown {
@@ -233,6 +244,19 @@
 					outline: none !important;
 				}
 			}
+		}
+	}
+}
+
+#RESConsoleContainer {
+	// 73px header height + 5px bottom padding + 1px border bottom = 79px
+	// 5px from header top.
+	top: 84px !important;
+	#SearchRES-input-container {
+		margin-top: 0 !important;
+
+		#SearchRES-input {
+			width: 200px !important;
 		}
 	}
 }

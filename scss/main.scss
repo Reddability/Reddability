@@ -48,12 +48,15 @@
 	}
 
 	#header-bottom-right {
-		display: table;
+		display: table !important;
 		background-color: transparent !important;
-		border-spacing: 0;
-		bottom: -3px;
-		top: auto;
+		border-spacing: 0 !important;
+		bottom: -7px !important;
+		top: auto !important;
 		font-size: 11px !important;
+		a {
+			margin-right: 3px !important;
+		}
 	}
 
 	#header-bottom-right .separator {
@@ -118,26 +121,34 @@
 	.spacer {
 		background-color: transparent !important;
 		margin: 10px 0 !important;
+
 		&:first-of-type {
 			margin-top: 5px !important;
 		}
 	}
 
-	#search input[name="q"] {
-		border-radius: 1px !important;
-		border-color: $blue_light;
-		width: 300px !important;
-		padding: 5px !important;
-		-webkit-box-sizing: border-box;
-		font-size: 15px;
-		text-align: center;
-		margin-top: 0 !important;
-	}
+	#search {
+		input[name="q"] {
+			border-radius: 1px !important;
+			border-color: $blue_light;
+			width: 300px !important;
+			padding: 5px !important;
+			-webkit-box-sizing: border-box;
+			font-size: 15px;
+			text-align: center;
+			margin-top: 0 !important;
 
-	#search input[name="q"]:active,
-	#search input[name="q"]:focus {
-		outline: none !important;
-		border: 1px solid $blue_dark;
+			&:active, &:focus {
+				outline: none !important;
+				border: 1px solid $blue_dark;
+			}
+		}
+
+		input[type="submit"] {
+			border: none !important;
+			background-color: transparent !important;
+			background-position: center !important;
+		}
 	}
 
 	.morelink {
@@ -286,6 +297,9 @@
 			.flat-list {
 				padding: 2px 0 !important; // This somehow undoes the stutter effect when opening the expando
 			}
+			.usertext {
+				max-width: $preferred_width !important;
+			}
 		}
 
 		.comment {
@@ -339,8 +353,11 @@
 		overflow-x: hidden;
 
 		.bottom-area {
+			// There already is 3px to the top of this for some reason
 			margin-top: 3px !important;
+			margin-bottom: 0px !important;
 			line-height: 27px !important;
+			margin-bottom:
 			span, a, button {
 				margin-top: 0 !important;
 				margin-bottom: 0 !important;

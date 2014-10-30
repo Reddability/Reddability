@@ -6,7 +6,10 @@ $lightgray: #F3F3F3;
 $green: #79B949;
 $green_light: #EDFFDF;
 $red: #D16063;
+
 $path: 'chrome-extension://__MSG_@@extension_id__/';
+
+$preferred_width: 860px;
 
 html, body {
 	background-color: $lightgray !important;
@@ -90,10 +93,6 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 .noncollapsed {
 	margin-left: 7px;
-}
-
-.midcol {
-	margin-right: 0 !important;
 }
 
 .md > p {

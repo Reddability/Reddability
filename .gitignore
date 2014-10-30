@@ -7,3 +7,4 @@
 *.sublime-project
 *.sublime-workspace
 *.svg
+/.sass-cache
