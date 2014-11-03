@@ -113,8 +113,8 @@
 
 .NERPageMarker {
 	@extend .footer;
-	text-transform: none;
-	box-sizing: border-box;
+	text-transform: none !important;
+	box-sizing: border-box !important;
 }
 
 #progressIndicator {
@@ -248,15 +248,48 @@
 	}
 }
 
-#RESConsoleContainer {
+#NERContent {
 	// 73px header height + 5px bottom padding + 1px border bottom = 79px
 	// 5px from header top.
 	top: 84px !important;
+	.RESThrobber {
+		// Override the negative top value of the footer's/#progressIndicator .RESThrobber
+		top: 0 !important;
+		margin: 10px auto !important;
+	}
+}
+
+#RESConsoleContainer {
+	@extend #NERContent;
 	#SearchRES-input-container {
 		margin-top: 0 !important;
 
 		#SearchRES-input {
 			width: 200px !important;
 		}
+	}
+}
+
+// Never ending reddit, loading animation
+#progressIndicator {
+	background: transparent !important;
+	border: none !important;
+	padding: 25px !important;
+	height: 50px !important;
+	box-sizing: border-box !important;
+
+	// This removed the text completely and the button for the settings, you cannot click the button anyway.
+	.NERWidgetText, h2 {
+		display: none !important;
+	}
+}
+
+.RESThrobber {
+	@extend .heartbeat;
+	display: block !important;
+	// Height is 30px, to vertically center it, move it up by half of that.
+	top: -15px !important;
+	&::before, &::after {
+		display: none !important;
 	}
 }

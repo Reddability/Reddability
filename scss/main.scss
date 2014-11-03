@@ -1,4 +1,5 @@
 @import 'default';
+@import 'heartbeat';
 
 // Header
 #header {
@@ -448,7 +449,14 @@
 }
 
 // Footer
+.footer-parent {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+// NERPageMarker inherits from .footer, we cannot put it in .footer-parent
 .footer {
+	margin-top: 0 !important;
 	border: 1px solid $blue_light !important;
 	border-radius: 1px !important;
 	text-transform: capitalize !important;
