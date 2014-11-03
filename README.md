@@ -30,6 +30,12 @@ You need to compile `scss/main.scss` and export it to `css/main.css`. Then enabl
 ###Compile for a subreddit
 If you want to use Reddability on your subreddit, there is `scss/subreddit.scss` that you can compile. Just make sure you also upload the images. Do not rename the images or it will give problems.
 
+Please refer to Reddabiltiy in the sidebar when you are using Reddabilty as the stylesheet on your subreddit. This way I can get more feedback and are bugs quickly reported and to the right person. You can copy and paste the following or be creative and create your own!
+
+```
+This subreddit uses the Reddability stylesheet made by Andreas Backx. [More information.](https://github.com/AndreasBackx/Reddability/)
+```
+
 ##License
 Reddability, a simple Google Chrome Extension that keeps Reddit, but makes it readable.
 
