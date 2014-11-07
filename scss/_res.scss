@@ -294,3 +294,8 @@
 		display: none !important;
 	}
 }
+
+// When clicking on a comment, RES changes its color.
+.RES-keyNav-activeElement .usertext .usertext-body .md {
+	background: transparent !important;
+}
