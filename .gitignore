@@ -8,3 +8,5 @@
 *.sublime-workspace
 *.svg
 /.sass-cache
+/publish
+/tmp
