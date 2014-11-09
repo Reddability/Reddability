@@ -1,5 +1,7 @@
-##Reddablity
+##Reddability
 Reddit, but readable. A Google Chrome Extension made by Andreas Backx that can be downloaded right [at the Google Chrome Web Store](https://chrome.google.com/webstore/detail/reddability/plcdgkcofciichapgeafkaefggdnklho).
+
+If you have any questions, feel free to join the #reddability channel on the [Freenode IRC network](https://freenode.net/).
 
 ##Why should you use it and why did I make it?
 I personally find Reddit not one of the most easy to browse websites nowadays. Since I'm on Reddit quite a bit, I decided do create something to make the experience even better. If you agree with me here, then I think this is a great Google Chrome Extension you should give a shot!
