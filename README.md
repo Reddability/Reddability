@@ -20,15 +20,7 @@ Besides the clean look, I often have Reddit open on one of the sides of my lapto
 Feel free to fork the repository or issue any suggestions or bugs.
 
 ##Setup and compiling
-The repository does not include the compiled CSS files to keep the commits clean. In order to compile the scss-files, you will need to install a compiler. [SCSS compilers can be found on their website.](http://sass-lang.com/install)
-
-Make sure the compiler does not export the `_*.scss` files since these are imported in `main.scss`.
-
-###Compile for a Google Chrome Extension
-You need to compile `scss/main.scss` and export it to `css/main.css`. Then enable the developer mode in Google Chrome and load the rootfolder of this project.
-
-###Compile for a subreddit
-If you want to use Reddability on your subreddit, there is `scss/subreddit.scss` that you can compile. Just make sure you also upload the images. Do not rename the images or it will give problems.
+The repository does not include the compiled CSS files to keep the commits clean. In order to compile the scss-files, you will need to install the command line sass compiler. [How to install the command line sass compiler can be found here.](http://sass-lang.com/install) Secondly you'll need to have `make` available. Once ready, just run the command `make` in the root project folder. The .crx file for the extension and .zip file containing the subreddit stylesheet and images will be published to a newly generated folder publish. There is no need to rename the images when you are uploading them to Reddit, everything is taken care of.
 
 Please refer to Reddabiltiy in the sidebar when you are using Reddabilty as the stylesheet on your subreddit. This way I can get more feedback and are bugs quickly reported and to the right person. You can copy and paste the following or be creative and create your own!
 
