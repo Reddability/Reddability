@@ -5,7 +5,7 @@
 #header {
 	background: $blue_white !important;
 	border-bottom: 1px solid $blue_light !important;
-	height: 73px;
+	height: 73px !important;
 	width: 100% !important;
 	padding-bottom: 5px !important;
 	z-index: $header_z_index !important;
@@ -18,16 +18,17 @@
 
 	#sr-header-area .width-clip, #sr-more-link {
 		padding: 5px !important;
-		background: transparent;
+		background: transparent !important;
 	}
 
 	#sr-header-area .sr-list {
-	    text-overflow: ellipsis;
-	    max-width: 90%;
-	    display: block;
+	    text-overflow: ellipsis !important;
+	    max-width: 90% !important;
+	    display: block !important;
 	}
 
 	#header-bottom-left {
+
 		#header-img.default-header {
 			background-image: url($path_reddit_logo) !important;
 			background-size: auto 40px !important;
@@ -36,25 +37,28 @@
 			margin: 5px 0 0 0 !important;
 		}
 
-		.tabmenu li a {
-			font-weight: normal !important;
-			background-color: transparent !important;
-			border: none !important;
-			text-transform: capitalize !important;
-			// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
-			display: block;
-			float: left;
-			padding: 0 10px !important;
+		.tabmenu {
+			li a {
+				font-weight: normal !important;
+				background-color: $blue_white !important;
+				border: none !important;
+				text-transform: capitalize !important;
+				// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
+				display: block !important;
+				float: left !important;
+				padding: 0 10px !important;
+			}
 		}
 	}
 
 	#header-bottom-right {
-		display: table !important;
-		background-color: transparent !important;
+		display: block !important;
+		background-color: $blue_white !important;
 		border-spacing: 0 !important;
-		bottom: -7px !important;
+		bottom: 0 !important;
 		top: auto !important;
 		font-size: 11px !important;
+		padding: 0 !important;
 		a {
 			margin-right: 3px !important;
 		}
@@ -69,14 +73,14 @@
 		#mail,
 		.pref-lang,
 		.logout {
-			display: block;
-			line-height: 24px;
-			float: left;
-			padding: 0 5px;
-			width: auto;
-			height: auto;
-			font-weight: normal;
-			margin: 0;
+			display: block !important;
+			line-height: 24px !important;
+			float: left !important;
+			padding: 0 5px !important;
+			width: auto !important;
+			height: auto !important;
+			font-weight: normal !important;
+			margin: 0 !important;
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
@@ -90,12 +94,12 @@
 	.logout {
 		text-transform: lowercase !important; // Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
 		a {
-			display: block; // For :first-letter uppercase
+			display: block !important; // For :first-letter uppercase
 		}
 	}
 
 	.userkarma {
-		border-bottom: none; // Removes the dotted bottom border below your karma
+		border-bottom: none !important; // Removes the dotted bottom border below your karma
 	}
 
 	#mail {
@@ -130,17 +134,17 @@
 	#search {
 		input[name="q"] {
 			border-radius: 1px !important;
-			border-color: $blue_light;
+			border-color: $blue_light !important;
 			width: 300px !important;
 			padding: 5px !important;
-			-webkit-box-sizing: border-box;
-			font-size: 15px;
-			text-align: center;
+			-webkit-box-sizing: border-box !important;
+			font-size: 15px !important;
+			text-align: center !important;
 			margin-top: 0 !important;
 
 			&:active, &:focus {
 				outline: none !important;
-				border: 1px solid $blue_dark;
+				border: 1px solid $blue_dark !important;
 			}
 		}
 
@@ -168,7 +172,7 @@
 	}
 
 	.nub {
-		display: none;
+		display: none !important;
 	}
 
 	.goldvertisement {
@@ -207,19 +211,19 @@
 		.midcol {
 			width: 15px !important;
 			margin: 5px 10px 5px 5px !important;
-			display: table-cell;
-			float: none;
-			vertical-align: middle;
+			display: table-cell !important;
+			float: none !important;
+			vertical-align: middle !important;
 		}
 
 		.entry {
 			display: table-cell !important;
-			padding-left: 5px;
+			padding-left: 5px !important;
 		}
 	}
 
 	.account-activity-box a {
-		display: block; // Required for text-transform: uppercase;
+		display: block !important; // Required for text-transform: uppercase !important;
 	}
 
 	.slidecontentbox .content {
@@ -230,7 +234,7 @@
 		background-color: white !important;
 		border: 1px solid $blue_light !important;
 		border-radius: 1px !important;
-		padding: 5px;
+		padding: 5px !important;
 
 		h1 + div {
 			background-color: transparent !important;
@@ -259,12 +263,12 @@
 		background-color: $blue_white !important;
 		border: 1px solid $blue_light !important;
 		border-radius: 1px !important;
-		padding: 5px;
+		padding: 5px !important;
 	}
 }
 
 .gold-bubble {
-	border-radius: 1px;
+	border-radius: 1px !important;
 	left: auto !important;
 	right: 5px !important;
 }
@@ -283,11 +287,11 @@
 		margin-top: 0px !important;
 
 		.link {
-			display: table;
-			background-color: white;
-			padding: 3px 0;
-			margin-bottom: 4px;
-			border-radius: 1px;
+			display: table !important;
+			background-color: white !important;
+			padding: 3px 0 !important;
+			margin-bottom: 4px !important;
+			border-radius: 1px !important;
 			border: 1px solid $blue_light !important;
 			.entry.RES-keyNav-activeElement {
 				background: white !important;
@@ -301,54 +305,54 @@
 		}
 
 		.comment {
-			background-color: white;
+			background-color: white !important;
 			border: 1px solid $blue_light !important;
-			margin: 0 0 5px 0;
-			padding: 5px;
+			margin: 0 0 5px 0 !important;
+			padding: 5px !important;
 			.entry.RES-keyNav-activeElement {
 				background: white !important;
 			}
 		}
 
 		.last-clicked {
-			border: none;
+			border: none !important;
 		}
 
 		.rank {
-			display: none;
+			display: none !important;
 		}
 
 		.midcol {
-			float: none;
-			max-width: 50px;
-			min-width: 50px;
+			float: none !important;
+			max-width: 50px !important;
+			min-width: 50px !important;
 		}
 
 		.entry {
-			width: 100%;
-			min-height: 60px;
-			padding: 0 3px;
+			width: 100% !important;
+			min-height: 60px !important;
+			padding: 0 3px !important;
 		}
 
 		.entry, .thumbnail, .midcol {
-			display: table-cell;
-			vertical-align: middle;
+			display: table-cell !important;
+			vertical-align: middle !important;
 		}
 
 		.thumbnail {
-			min-width: 70px;
-			max-width: 70px;
+			min-width: 70px !important;
+			max-width: 70px !important;
 		}
 
 		.md {
-			border: none;
+			border: none !important;
 			background-color: transparent !important;
-			max-width: none;
+			max-width: none !important;
 		}
 	}
 
 	.commentarea {
-		overflow-x: hidden;
+		overflow-x: hidden !important;
 
 		.bottom-area {
 			// There already is 3px to the top of this for some reason
@@ -395,10 +399,10 @@
 					border-radius: 1px !important;
 					border-color: $blue_dark !important;
 					.title {
-						display: block; // Needed for capitalization in _default.sccss
-						float: left;
-						margin-right: 10px;
-						line-height: 27px;
+						display: block !important; // Needed for capitalization in _default.sccss
+						float: left !important;
+						margin-right: 10px !important;
+						line-height: 27px !important;
 					}
 					&.captcha {
 						margin-bottom: 5px !important;

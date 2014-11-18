@@ -47,18 +47,18 @@ hr {
 .SRInput {
 	border: 1px solid $blue_light !important;
 	width: 100% !important;
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 	padding: 6px !important;
 	box-sizing: border-box !important;
 	-webkit-box-shadow: none !important; // Used in preferences
 	box-shadow: none !important;
 
 	&:focus, &:active {
-		outline: none;
+		outline: none !important;
 		border-color: $blue_dark !important;
 	}
 	&::-webkit-input-placeholder:first-letter {
-		text-transform: uppercase;
+		text-transform: uppercase !important;
 	}
 }
 
@@ -104,17 +104,17 @@ button, select, input[type="submit"] {
 // SPOILERS
 // Additional classes are there to fix the cutoff blur that occurs
 a[href$="/s"], a[href$="/spoiler"] {
-	cursor: default;
+	cursor: default !important;
 	color: transparent !important;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5) !important;
 	&:hover {
 		color: black !important;
-		text-shadow: none;
+		text-shadow: none !important;
 	}
 }
 
 .noncollapsed {
-	margin-left: 7px;
+	margin-left: 7px !important;
 }
 
 .md > p {
@@ -129,13 +129,13 @@ a[href$="/s"], a[href$="/spoiler"] {
 	border-radius: 1px !important;
 	background-color: #FFFAE5 !important;
 	border-color: #F6E69F !important;
-	color: $blue_dark;
+	color: $blue_dark !important;
 }
 
 .info-notice {
 	border-radius: 1px !important;
 	background-color: $blue_white !important;
-	border: 1px solid $blue_light;
+	border: 1px solid $blue_light !important;
 }
 
 .livePreview {
@@ -180,8 +180,8 @@ a[href$="/s"], a[href$="/spoiler"] {
 .arrow {
 	background-position: 0 0 !important;
 	background-size: 100% !important;
-	width: 15px;
-	height: 15px;
+	width: 15px !important;
+	height: 15px !important;
 }
 
 .domain, .linkflairlabel {
