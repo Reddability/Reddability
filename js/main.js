@@ -8,11 +8,12 @@ var sidebar = $('.side');
 $(document).ready(function() {
 	$('.side #search input[name="q"]').attr('autocomplete', 'off');
 
-	$('#header-bottom-right .flat-list.hover li').append('<a href="#" id="sidebar-hide" class="pref-lang">' + sidebar_hide_text + '</a>');
+	if($('.side').is(':visible')) {
+		$('#header-bottom-right .flat-list.hover li').append('<a href="#" id="sidebar-hide" class="pref-lang">' + sidebar_hide_text + '</a>');
+		updateSidebar();
+		$(sidebarHide).on('click', function(event) { event.preventDefault(); setSidebar(); });
+	}
 
-	updateSidebar();
-
-	$(sidebarHide).on('click', function(event) { event.preventDefault(); setSidebar(); });
 });
 
 function setSidebar(hide) {
