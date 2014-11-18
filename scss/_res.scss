@@ -2,8 +2,8 @@
 
 	#userbarToggle {
 		background-color: transparent !important;
-		color: $blue_dark;
-		border: none;
+		color: $blue_dark !important;
+		border: none !important;
 		margin-bottom: 1px !important;
 	}
 
@@ -135,7 +135,9 @@
 
 // Cog image to open the preference dropdown
 #openRESPrefs {
-	margin-top: 2px !important;
+	position: absolute !important;
+	right: 25px !important;
+	top: 3px !important;
 }
 
 .RESDropdownList, #RESPrefsDropdown {

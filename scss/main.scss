@@ -70,18 +70,31 @@
 	}
 
 	#header-bottom-right {
+
+		.user,
+		#mail,
+		.pref-lang,
+		.logout,
+		#modmail {
+			display: inline-block !important;
+			margin: 0 !important;
+		}
+
+		#modmail  {
+			margin-top: 4px !important;
+			margin-right: 21px !important;
+		}
+
 		.user,
 		#mail,
 		.pref-lang,
 		.logout {
-			display: block !important;
-			line-height: 24px !important;
 			float: left !important;
+			line-height: 24px !important;
 			padding: 0 5px !important;
 			width: auto !important;
 			height: auto !important;
 			font-weight: normal !important;
-			margin: 0 !important;
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
