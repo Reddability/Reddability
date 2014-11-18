@@ -56,10 +56,11 @@
 		background-color: $blue_white !important;
 		border-spacing: 0 !important;
 		bottom: 0 !important;
+		right: -20px !important;
 		top: auto !important;
 		font-size: 11px !important;
 		padding: 0 !important;
-		a {
+		& > * {
 			margin-right: 3px !important;
 		}
 	}
