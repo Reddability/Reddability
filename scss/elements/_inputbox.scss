@@ -1,0 +1,38 @@
+.RAInput {
+    width: 100% !important;
+    margin: 4px 0 !important;
+
+    border: 1px solid $blue_light !important;
+    border-radius: 0 !important;
+    padding: 6px !important;
+
+    box-sizing: border-box !important;
+
+    -webkit-box-shadow: none !important; // Used in preferences
+    box-shadow: none !important;
+
+    &:focus, &:active {
+        outline: none !important;
+        border-color: $blue_dark !important;
+    }
+    &::-webkit-input-placeholder:first-letter {
+        text-transform: uppercase !important;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
+    @extend .RAInput;
+    height: auto !important;
+}
+
+.preftable input {
+    width: auto !important;
+}
+
+textarea {
+    @extend .RAInput;
+    min-height: 100px !important;
+}

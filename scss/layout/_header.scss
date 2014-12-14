@@ -1,8 +1,9 @@
 #header {
 	background: $blue_white !important;
 	border-bottom: 1px solid $blue_light !important;
-	height: 73px !important;
+	height: $header_height !important;
 	width: 100% !important;
+	box-sizing: border-box !important;
 	padding-bottom: 5px !important;
 	z-index: $header_z_index !important;
 

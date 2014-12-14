@@ -8,63 +8,6 @@ hr {
 	margin: 10px 0 !important;
 }
 
-.SRInput {
-	border: 1px solid $blue_light !important;
-	width: 100% !important;
-	box-sizing: border-box !important;
-	padding: 6px !important;
-	box-sizing: border-box !important;
-	-webkit-box-shadow: none !important; // Used in preferences
-	box-shadow: none !important;
-
-	&:focus, &:active {
-		outline: none !important;
-		border-color: $blue_dark !important;
-	}
-	&::-webkit-input-placeholder:first-letter {
-		text-transform: uppercase !important;
-	}
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"] {
-	@extend .SRInput;
-	height: auto !important;
-}
-
-.preftable input {
-	width: auto !important;
-}
-
-textarea {
-	@extend .SRInput;
-	min-height: 100px !important;
-}
-
-button, select, input[type="submit"] {
-	padding: 6px !important;
-	border-radius: 1px !important;
-	border: 1px solid $blue_light !important;
-	text-transform: capitalize !important;
-	background-color: white !important;
-	color: $blue_dark !important;
-	height: auto !important;
-
-	&:hover, &:active, &:focus {
-		border-color: $blue_dark !important;
-		background-color: $blue_white !important;
-		outline: none !important;
-	}
-}
-
-.collapse-button {
-	border-radius: 1px !important;
-	border-color: $gray !important;
-	color: $gray !important;
-}
-
 // SPOILERS
 // Additional classes are there to fix the cutoff blur that occurs
 a[href$="/s"], a[href$="/spoiler"] {
