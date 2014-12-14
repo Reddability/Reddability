@@ -36,15 +36,13 @@ extensioncopy:
 		done \
 	done <<< "$(extensionFiles)"
 
-extension: extensioncss
+extension: scss/main.scss extensioncopy
+	sass --update scss/main.scss:$(extensionPath)css/main.css --scss --sourcemap=none
 	cd $(extensionPath); zip -r ../Reddability-extension.crx *
 	rm -rf $(extensionPath)
 
 extensionwebstore: extension
 	cp publish/Reddability-extension.crx publish/Reddability-extension.zip
-
-extensioncss: scss/main.scss extensioncopy
-	sass --update scss/main.scss:$(extensionPath)css/main.css --scss --sourcemap=none
 
 clean:
 	rm -rf publish
