@@ -363,19 +363,19 @@
 		}
 	}
 
+	.bottom-area {
+		// There already is 3px to the top of this for some reason
+		margin-top: 3px !important;
+		margin-bottom: 6px !important;
+		line-height: 27px !important;
+		span, a, button {
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+	}
+
 	.commentarea {
 		overflow-x: hidden !important;
-
-		.bottom-area {
-			// There already is 3px to the top of this for some reason
-			margin-top: 3px !important;
-			margin-bottom: 6px !important;
-			line-height: 27px !important;
-			span, a, button {
-				margin-top: 0 !important;
-				margin-bottom: 0 !important;
-			}
-		}
 
 		.comment {
 			background-color: white !important;
@@ -411,12 +411,10 @@
 				.roundfield, & + .roundfield {
 					width: auto !important;
 					padding: 5px !important;
-					background-color: $blue_light !important;
-					border-radius: 1px !important;
-					border-color: $blue_dark !important;
+					background-color: $blue_white !important;
+					border: 1px solid $blue_light !important;
+					border-radius: 0 !important;
 					.title {
-						display: block !important; // Needed for capitalization in _default.sccss
-						float: left !important;
 						margin-right: 10px !important;
 						line-height: 27px !important;
 					}
@@ -453,6 +451,24 @@
 			background-color: white !important;
 			.toc ul {
 				border-color: $blue_dark !important;
+			}
+		}
+	}
+
+	.pretty-form {
+		overflow-x: hidden !important;
+		.linefield {
+			width: auto !important;
+			background-color: $blue_white !important;
+			margin-bottom: 0 !important;
+			border: 1px solid $blue_light !important;
+			border-bottom: none !important;
+			border-top: none !important;
+			&:first-of-type {
+				border-top: 1px solid $blue_light !important;
+			}
+			&:last-of-type {
+				border-bottom: 1px solid $blue_light !important;
 			}
 		}
 	}

@@ -8,7 +8,6 @@ extensionPath = publish/extension/
 subredditPath = publish/subreddit/
 
 comma := ,
-empty :=
 
 # += adds a space, making $(space) equal to a space
 space :=

@@ -290,7 +290,9 @@ a[href$="/s"], a[href$="/spoiler"] {
 .content .commentarea .panestack-title .title,
 .wikititle,
 .wikiaction,
-#wikiactions .content li ul a {
+#wikiactions .content li ul a,
+.title,
+.gray {
 	display: inline-block !important;
 	&:first-letter {
 		text-transform: uppercase !important;
