@@ -16,6 +16,8 @@ space +=
 
 all: subreddit extension
 
+dev: subreddit extensionwebstore
+
 subreddit: scss/subreddit.scss subredditimages
 	sass --update scss/subreddit.scss:$(subredditPath)main.css --scss --sourcemap=none
 	cd publish/subreddit; zip -r ../Reddability-stylesheet.zip *
@@ -34,10 +36,15 @@ extensioncopy:
 		done \
 	done <<< "$(extensionFiles)"
 
-extension: scss/main.scss extensioncopy
-	sass --update scss/main.scss:$(extensionPath)css/main.css --scss --sourcemap=none
+extension: extensioncss
 	cd $(extensionPath); zip -r ../Reddability-extension.crx *
 	rm -rf $(extensionPath)
+
+extensionwebstore: extension
+	cp publish/Reddability-extension.crx publish/Reddability-extension.zip
+
+extensioncss: scss/main.scss extensioncopy
+	sass --update scss/main.scss:$(extensionPath)css/main.css --scss --sourcemap=none
 
 clean:
 	rm -rf publish
