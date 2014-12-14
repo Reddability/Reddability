@@ -1,0 +1,127 @@
+#header {
+	background: $blue_white !important;
+	border-bottom: 1px solid $blue_light !important;
+	height: 73px !important;
+	width: 100% !important;
+	padding-bottom: 5px !important;
+	z-index: $header_z_index !important;
+
+	#sr-header-area {
+		height: 28px !important;
+		border-bottom: none !important;
+		background: transparent !important;
+	}
+
+	#sr-header-area .width-clip, #sr-more-link {
+		padding: 5px !important;
+		background: transparent !important;
+	}
+
+	#sr-header-area .sr-list {
+	    text-overflow: ellipsis !important;
+	    max-width: 90% !important;
+	    display: block !important;
+	}
+
+	#header-bottom-left {
+
+		#header-img.default-header {
+			background-image: url($path_reddit_logo) !important;
+			background-size: auto 40px !important;
+			background-position: center !important;
+			width: 135px !important;
+			margin: 5px 0 0 0 !important;
+		}
+
+		.tabmenu {
+			li a {
+				font-weight: normal !important;
+				background-color: $blue_white !important;
+				border: none !important;
+				text-transform: capitalize !important;
+				// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
+				display: block !important;
+				float: left !important;
+				padding: 0 10px !important;
+			}
+		}
+	}
+
+	#header-bottom-right {
+		display: block !important;
+		background-color: $blue_white !important;
+		border-spacing: 0 !important;
+		bottom: 0 !important;
+		top: auto !important;
+		font-size: 11px !important;
+		padding: 0 !important;
+		& > * {
+			margin-right: 3px !important;
+		}
+	}
+
+	#header-bottom-right .separator {
+		display: none !important;
+	}
+
+	#header-bottom-right {
+
+		.user,
+		#mail,
+		.pref-lang,
+		.logout,
+		#modmail {
+			display: inline-block !important;
+		}
+
+		#modmail  {
+			margin-top: 4px !important;
+		}
+
+		.user,
+		.pref-lang,
+		.logout {
+			margin: 0 !important;
+			float: left !important;
+			line-height: 24px !important;
+			padding: 0 5px !important;
+			width: auto !important;
+			height: auto !important;
+			font-weight: normal !important;
+			&:first-letter {
+				text-transform: uppercase !important;
+			}
+		}
+
+		.user {
+			margin-left: 10px !important; // Spacing between userbarToggle from RES and the username
+		}
+	}
+
+	.logout {
+		text-transform: lowercase !important; // Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
+		a {
+			display: block !important; // For :first-letter uppercase
+		}
+	}
+
+	.userkarma {
+		border-bottom: none !important; // Removes the dotted bottom border below your karma
+	}
+
+	#mail {
+		float: left !important;
+		height: 10px !important;
+		margin-top: 5px !important;
+		padding: 0 !important;
+		background-image: url($path_mail) !important;
+		background-size: 15px 20px !important;
+		background-repeat: no-repeat !important;
+		&.nohavemail {
+			background-position: 0 0 !important;
+		}
+		&.havemail {
+			background-position: 0 -10px !important;
+		}
+	}
+}

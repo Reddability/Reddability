@@ -1,0 +1,186 @@
+.content {
+    margin: 5px !important;
+
+    .spacer {
+        margin-bottom: 0 !important;
+    }
+
+    #siteTable {
+        overflow-x: hidden !important;
+        margin-top: 0px !important;
+
+        .link {
+            display: table !important;
+            background-color: white !important;
+            padding: 3px 0 !important;
+            margin-bottom: 4px !important;
+            border-radius: 1px !important;
+            border: 1px solid $blue_light !important;
+            .entry.RES-keyNav-activeElement {
+                background: white !important;
+            }
+            .flat-list {
+                padding: 2px 0 !important; // This somehow undoes the stutter effect when opening the expando
+            }
+            .usertext {
+                max-width: $preferred_width !important;
+            }
+        }
+
+        .comment {
+            background-color: white !important;
+            border: 1px solid $blue_light !important;
+            margin: 0 0 5px 0 !important;
+            padding: 5px !important;
+            .entry.RES-keyNav-activeElement {
+                background: white !important;
+            }
+        }
+
+        .last-clicked {
+            border: none !important;
+        }
+
+        .rank {
+            display: none !important;
+        }
+
+        .midcol {
+            float: none !important;
+            max-width: 50px !important;
+            min-width: 50px !important;
+        }
+
+        .entry {
+            width: 100% !important;
+            min-height: 60px !important;
+            padding: 0 3px !important;
+        }
+
+        .entry, .thumbnail, .midcol {
+            display: table-cell !important;
+            vertical-align: middle !important;
+        }
+
+        .thumbnail {
+            min-width: 70px !important;
+            max-width: 70px !important;
+        }
+
+        .md {
+            border: none !important;
+            background-color: transparent !important;
+            max-width: none !important;
+        }
+    }
+
+    .bottom-area {
+        // There already is 3px to the top of this for some reason
+        margin-top: 3px !important;
+        margin-bottom: 6px !important;
+        line-height: 27px !important;
+        span, a, button {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .commentarea {
+        overflow-x: hidden !important;
+
+        .comment {
+            background-color: white !important;
+            border: 1px solid $blue_light !important;
+            border-radius: 1px !important;
+        }
+
+        .sitetable > .comment .entry.RES-keyNav-activeElement {
+            background-color: transparent !important;
+            .noncollapsed {
+                background-color: transparent !important;
+                .md:first-child {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+
+    .usertext {
+        margin-bottom: 0 !important;
+
+        .usertext-edit {
+            width: auto !important;
+        }
+    }
+
+    .submit.content {
+        .formtabs-content {
+            width: auto !important;
+            overflow: hidden !important;
+            .spacer {
+                margin-bottom: 5px !important;
+                .roundfield, & + .roundfield {
+                    width: auto !important;
+                    padding: 5px !important;
+                    background-color: $blue_white !important;
+                    border: 1px solid $blue_light !important;
+                    border-radius: 0 !important;
+                    .title {
+                        margin-right: 10px !important;
+                        line-height: 27px !important;
+                    }
+                    &.captcha {
+                        margin-bottom: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .wikititle {
+        color: black !important;
+    }
+
+    .pageactions {
+        border-radius: 1px !important;
+        border: 1px solid $blue_light !important;
+        background-color: white !important;
+
+        .wikiaction {
+            &.wikiaction-current {
+                color: orangered !important;
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    .wiki-page-content {
+        margin: 0 !important;
+        .md.wiki {
+            border: 1px solid $blue_light !important;
+            padding: 0 10px !important;
+            background-color: white !important;
+            .toc ul {
+                border-color: $blue_dark !important;
+            }
+        }
+    }
+
+    .pretty-form {
+        overflow-x: hidden !important;
+        .linefield {
+            width: auto !important;
+            background-color: $blue_white !important;
+            margin-bottom: 0 !important;
+            border: 1px solid $blue_light !important;
+            border-bottom: none !important;
+            border-top: none !important;
+            &:first-of-type {
+                border-top: 1px solid $blue_light !important;
+            }
+            &:last-of-type {
+                border-bottom: 1px solid $blue_light !important;
+            }
+        }
+    }
+}
