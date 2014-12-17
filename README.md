@@ -1,4 +1,4 @@
-##Reddability
+#Reddability
 Reddit, but readable. A Google Chrome Extension made by Andreas Backx that can be downloaded right [at the Google Chrome Web Store](https://chrome.google.com/webstore/detail/reddability/plcdgkcofciichapgeafkaefggdnklho).
 
 If you have any questions, feel free to join the #reddability channel on the [Freenode IRC network](https://freenode.net/).
