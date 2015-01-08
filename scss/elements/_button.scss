@@ -1,11 +1,13 @@
 button, select, input[type="submit"] {
-    padding: 6px !important;
-    border-radius: 1px !important;
-    border: 1px solid $blue_light !important;
-    text-transform: capitalize !important;
-    background-color: white !important;
-    color: $blue_dark !important;
     height: auto !important;
+    padding: 6px !important;
+
+    background-color: white !important;
+    border: 1px solid $blue_light !important;
+    border-radius: 1px !important;
+
+    color: $blue_dark !important;
+    text-transform: capitalize !important;
 
     &:hover, &:active, &:focus {
         border-color: $blue_dark !important;

@@ -51,10 +51,7 @@
 				border: 1px solid $blue_light !important;
 				background-image: url($path_markdown) !important;
 				background-size: 32px 250px !important;
-				// For some reason overflow: hidden hides the border, but having it visible
-				// shows the text, so we're setting the text color to transparent.
-				//overflow: visible !important;
-				//color: transparent !important;
+				float: left !important;
 				&:hover, &:active, &:focus {
 					border-color: $blue_dark !important;
 					background-color: $blue_white !important;

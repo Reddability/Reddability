@@ -4,6 +4,7 @@ imagesList = {$(subst $(space),$(comma),$(images))}
 
 chromeFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss,$(files)))
 safariFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss _locales/% manifest.json,$(files)))
+safariIcon = img/branding/app_iconx256.png
 
 chromePath = publish/chrome/
 safariPath = publish/Reddability.safariextension/
@@ -56,8 +57,7 @@ chromewebstore: chrome
 
 safari: scss/main.scss safaricopy
 	sass --update scss/safari.scss:$(safariPath)css/main.css --scss --sourcemap=none
-	# cd $(safariPath); zip -r ../Reddability-chrome.crx *
-	# rm -rf $(safariPath)
+	cp $(safariIcon) $(safariPath)/icon.png
 
 
 clean:
