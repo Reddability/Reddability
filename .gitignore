@@ -1,8 +1,8 @@
 *.sketch
 /css/
-/img/webstore/screenshots/
-/img/webstore/large_promo_image.png
-/img/webstore/small_promo_image.png
+/img/branding/screenshots/
+/img/branding/large_promo_image.png
+/img/branding/small_promo_image.png
 .DS_Store
 *.sublime-project
 *.sublime-workspace

@@ -7,8 +7,8 @@
 	"author": "Andreas Backx",
 
 	"icons": {
-		"128": "img/webstore/app_icon.png",
-		"256": "img/webstore/app_iconx256.png"
+		"128": "img/branding/app_icon.png",
+		"256": "img/branding/app_iconx256.png"
 	},
 
 	"default_locale": "en",

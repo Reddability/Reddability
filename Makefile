@@ -2,9 +2,11 @@ files = $(shell git ls-tree --name-only -r HEAD)
 images = $(filter %.png,$(files))
 imagesList = {$(subst $(space),$(comma),$(images))}
 
-extensionFiles = $(strip $(filter-out Makefile README.md %.scss,$(files)))
+chromeFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss,$(files)))
+safariFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss _locales/% manifest.json,$(files)))
 
-extensionPath = publish/extension/
+chromePath = publish/chrome/
+safariPath = publish/Reddability.safariextension/
 subredditPath = publish/subreddit/
 
 comma := ,
@@ -13,9 +15,9 @@ comma := ,
 space :=
 space +=
 
-all: subreddit extension
+all: subreddit chrome
 
-dev: subreddit extensionwebstore
+dev: subreddit chromewebstore
 
 subreddit: scss/subreddit.scss subredditimages
 	sass --update scss/subreddit.scss:$(subredditPath)main.css --scss --sourcemap=none
@@ -26,22 +28,37 @@ subredditimages:
 	mkdir -p $(subredditPath)img
 	cp $(imagesList) $(subredditPath)img
 
-extensioncopy:
+chromecopy:
 	while IFS=' ' read -ra ADDR; do \
 		for i in "$${ADDR[@]}"; do \
-			mkdir -p $(extensionPath)$$i; \
-			rmdir $(extensionPath)$$i; \
-			cp $$i $(extensionPath)$$i; \
+			mkdir -p $(chromePath)$$i; \
+			rmdir $(chromePath)$$i; \
+			cp $$i $(chromePath)$$i; \
 		done \
-	done <<< "$(extensionFiles)"
+	done <<< "$(chromeFiles)"
 
-extension: scss/main.scss extensioncopy
-	sass --update scss/main.scss:$(extensionPath)css/main.css --scss --sourcemap=none
-	cd $(extensionPath); zip -r ../Reddability-extension.crx *
-	rm -rf $(extensionPath)
+safaricopy:
+	while IFS=' ' read -ra ADDR; do \
+		for i in "$${ADDR[@]}"; do \
+			mkdir -p $(safariPath)$$i; \
+			rmdir $(safariPath)$$i; \
+			cp $$i $(safariPath)$$i; \
+		done \
+	done <<< "$(safariFiles)"
 
-extensionwebstore: extension
-	cp publish/Reddability-extension.crx publish/Reddability-extension.zip
+chrome: scss/main.scss chromecopy
+	sass --update scss/main.scss:$(chromePath)css/main.css --scss --sourcemap=none
+	cd $(chromePath); zip -r ../Reddability-chrome.crx *
+	rm -rf $(chromePath)
+
+chromewebstore: chrome
+	cp publish/Reddability-chrome.crx publish/Reddability-chrome.zip
+
+safari: scss/main.scss safaricopy
+	sass --update scss/safari.scss:$(safariPath)css/main.css --scss --sourcemap=none
+	# cd $(safariPath); zip -r ../Reddability-chrome.crx *
+	# rm -rf $(safariPath)
+
 
 clean:
 	rm -rf publish
