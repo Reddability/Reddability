@@ -1,37 +1,34 @@
 #header {
-
 	#userbarToggle {
-		background-color: transparent !important;
-		color: $blue_dark !important;
-		border: none !important;
 		margin-bottom: 1px !important;
+		border: none !important;
+
+		background-color: transparent !important;
+
+		color: $blue_dark !important;
 	}
 
-	#srLeftContainer,
-	#RESShortcutsViewport,
-	#RESShortcutsEditContainer {
+	#srLeftContainer, #RESShortcutsViewport, #RESShortcutsEditContainer {
 		@extend #sr-more-link;
 	}
 
 	#RESShortcutsEditContainer {
 		background: transparent !important;
 
-		#RESShortcutsSort,
-		#RESShortcutsRight,
-		#RESShortcutsAdd,
-		#RESShortcutsTrash,
-		#RESShortcutsLeft {
+		#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft {
 			background: transparent !important;
 		}
 	}
 }
 
 #RESShortcutsAddFormContainer, #srList {
-	z-index: $header_z_index + 1 !important; // Needs to be above #header
+	// Needs to be above #header
+	z-index: $header_z_index + 1 !important;
 }
 
 .commentingAs {
 	margin: 0 0 0 10px !important;
+
 	line-height: 27px !important;
 }
 
@@ -41,49 +38,65 @@
 
 .usertext-edit {
 	.markdownEditor-wrapper {
-		margin-bottom: 6px !important;
 		width: auto !important;
+		margin-bottom: 6px !important;
+
 		.markdownEditor {
 			.edit-btn {
 				$edit_height: 25px;
+
+				float: left !important;
+
 				height: $edit_height !important;
-				border-radius: 1px !important;
 				border: 1px solid $blue_light !important;
+				border-radius: 1px !important;
+
 				background-image: url($path_markdown) !important;
 				background-size: 32px 250px !important;
-				float: left !important;
+
 				&:hover, &:active, &:focus {
 					border-color: $blue_dark !important;
-					background-color: $blue_white !important;
 					outline: none !important;
+
+					background-color: $blue_white !important;
 				}
+
 				&.btn-bold {
 					background-position: 0 ($edit_height * -0) !important;
 				}
+
 				&.btn-italic {
 					background-position: 0 ($edit_height * -1) !important;
 				}
+
 				&.btn-strike {
 					background-position: 0 ($edit_height * -2) !important;
 				}
+
 				&.btn-superscript {
 					background-position: 0 ($edit_height * -3) !important;
 				}
+
 				&.btn-link {
 					background-position: 0 ($edit_height * -4) !important;
 				}
+
 				&.btn-quote {
 					background-position: 0 ($edit_height * -5) !important;
 				}
+
 				&.btn-code {
 					background-position: 0 ($edit_height * -6) !important;
 				}
+
 				&.btn-list-unordered {
 					background-position: 0 ($edit_height * -7) !important;
 				}
+
 				&.btn-list-ordered {
 					background-position: 0 ($edit_height * -8) !important;
 				}
+
 				&.btn-table {
 					background-position: 0 ($edit_height * -9) !important;
 				}
@@ -92,38 +105,36 @@
 	}
 }
 
-#REScommentSubToggle,
-.RESBigEditorPop {
+#REScommentSubToggle,.RESBigEditorPop {
 	@extend button;
 }
 
 .RESBigEditorPop {
 	background-image: url($path_fullscreen) !important;
-	background-size: 12px !important;
 	background-position: 7px 50% !important;
+	background-size: 12px !important;
 }
 
 .RESCloseButton {
 	@extend button;
+
 	padding: 0 !important;
 }
 
 .NERPageMarker {
 	@extend .footer;
-	text-transform: none !important;
-	box-sizing: border-box !important;
-}
 
-#progressIndicator {
-	width: 100% !important;
-	@extend .NERPageMarker;
+	box-sizing: border-box !important;
+
+	text-transform: none !important;
 }
 
 .RESCharCounter {
-	margin-left: 10px !important;
 	margin-bottom: 0 !important;
-	line-height: 27px !important;
+	margin-left: 10px !important;
+
 	font-size: 100% !important;
+	line-height: 27px !important;
 }
 
 .RESDialogSmall {
@@ -133,15 +144,18 @@
 // Cog image to open the preference dropdown
 #openRESPrefs {
 	position: absolute !important;
-	right: 3px !important;
 	top: -17px !important;
+	right: 3px !important;
 }
 
 .RESDropdownList, #RESPrefsDropdown {
-	background-color: white !important;
+	z-index: $header_z_index + 1 !important;
+
 	border: 1px solid $blue_dark !important;
-	z-index: $header_z_index + 1 !important; // Under the options wheel thingy
+	// Under the options wheel thingy
 	border-radius: 1px !important;
+
+	background-color: white !important;
 }
 
 #RESPrefsDropdown {
@@ -149,21 +163,27 @@
 
 	#RESDropdownOptions {
 		li, a {
-			font-weight: normal !important;
 			color: $blue_dark !important;
+			font-weight: normal !important;
+
 			i {
-				color: inherit !important;
-				border-color: $blue_dark !important;
 				@if $path_prefs_dropdown {
 					background-image: url($path_prefs_dropdown) !important;
 				}
+
+				border-color: $blue_dark !important;
+
+				color: inherit !important;
 			}
+
 			&:hover {
 				background-color: $blue_white !important;
 			}
+
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
+
 			&:last-of-type {
 				border-bottom: none !important;
 			}
@@ -173,10 +193,12 @@
 
 .RESGearOverlay {
 	@extend .RESDropdownList;
-	border: none !important;
-	background: none !important;
+
 	visibility: hidden !important;
 	margin: 4px 5px 0px 5px !important;
+	border: none !important;
+
+	background: none !important;
 }
 
 #RESConsole input {
@@ -189,23 +211,24 @@
 
 .RESMacroDropdownTitle {
 	@extend button;
-	text-decoration: none !important;
+
 	padding-right: 25px !important;
+
+	text-decoration: none !important;
 }
 
 .RESMacroDropdown {
+	margin-top: 12px !important;
 	border: 1px solid $blue_white !important;
 	border-radius: 1px;
-	margin-top: 12px !important;
 
 	&:hover {
 		border-color: $blue_dark !important;
+
 		li {
-			&:first-of-type {
-				border-top: none !important;
-			}
 			border-color: $blue_dark !important;
 			border-top: 1px solid $blue_dark !important;
+
 			&:first-of-type {
 				border-top: none !important;
 			}
@@ -214,32 +237,42 @@
 
 	.RESMacroDropdownTitleOverlay {
 		@extend .RESMacroDropdownTitle;
+
 		border-bottom: none !important;
 	}
 
 	.RESMacroDropdownList {
 		@extend .RESDropdownList;
+
 		border-color: $blue_white !important;
-		border-right: none !important;
 		border-left: none !important;
+		border-right: none !important;
+
 		li {
 			border-color: $blue_white !important;
+
 			&:last-child {
 				border-bottom: none !important;
 			}
+
 			&:hover {
-				background-color: $blue_white !important;
 				border-color: $blue_dark !important;
+
+				background-color: $blue_white !important;
 			}
+
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
+
 			a {
 				color: $blue_dark !important;
 				font-weight: normal !important;
+
 				&:hover {
 					background-color: $blue_white !important;
 				}
+
 				&:focus, &:active {
 					outline: none !important;
 				}
@@ -252,15 +285,18 @@
 	// 73px header height + 5px bottom padding + 1px border bottom = 79px
 	// 5px from header top.
 	top: 84px !important;
+
 	.RESThrobber {
 		// Override the negative top value of the footer's/#progressIndicator .RESThrobber
 		top: 0 !important;
+
 		margin: 10px auto !important;
 	}
 }
 
 #RESConsoleContainer {
 	@extend #NERContent;
+
 	#SearchRES-input-container {
 		margin-top: 0 !important;
 
@@ -272,11 +308,12 @@
 
 // Never ending reddit, loading animation
 #progressIndicator {
-	background: transparent !important;
-	border: none !important;
-	padding: 25px !important;
 	height: 50px !important;
 	box-sizing: border-box !important;
+	padding: 25px !important;
+	border: none !important;
+
+	background: transparent !important;
 
 	// This removed the text completely and the button for the settings, you cannot click the button anyway.
 	.NERWidgetText, h2 {
@@ -286,9 +323,11 @@
 
 .RESThrobber {
 	@extend .heartbeat;
+
 	display: block !important;
 	// Height is 30px, to vertically center it, move it up by half of that.
 	top: -15px !important;
+
 	&::before, &::after {
 		display: none !important;
 	}

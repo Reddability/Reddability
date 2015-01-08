@@ -3,17 +3,19 @@ html, body {
 }
 
 hr {
-	border-color: $blue_light !important;
-	border-bottom: none !important;
 	margin: 10px 0 !important;
+	border-bottom: none !important;
+	border-color: $blue_light !important;
 }
 
 // SPOILERS
 // Additional classes are there to fix the cutoff blur that occurs
 a[href$="/s"], a[href$="/spoiler"] {
-	cursor: default !important;
 	color: transparent !important;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5) !important;
+
+	cursor: default !important;
+
 	&:hover {
 		color: black !important;
 		text-shadow: none !important;
@@ -25,36 +27,42 @@ a[href$="/s"], a[href$="/spoiler"] {
 }
 
 .md > p {
+	display: block !important;
+
 	padding-left: 10px !important;
 	margin-left: -10px !important;
-	display: block !important;
 }
 
-// END SPOILERS
-
 .infobar {
-	border-radius: 1px !important;
-	background-color: #FFFAE5 !important;
 	border-color: #F6E69F !important;
+	border-radius: 1px !important;
+
+	background-color: #FFFAE5 !important;
+
 	color: $blue_dark !important;
 }
 
 .info-notice {
-	border-radius: 1px !important;
-	background-color: $blue_white !important;
 	border: 1px solid $blue_light !important;
+	border-radius: 1px !important;
+
+	background-color: $blue_white !important;
 }
 
 .livePreview {
-		background-color: white !important;
-		background-image: none !important;
-		border: 1px solid $blue_light !important;
-		border-radius: 1px !important;
+	border: 1px solid $blue_light !important;
+	border-radius: 1px !important;
+
+	background-color: white !important;
+	background-image: none !important;
+
 	> h3 {
+		border-color: $blue_light !important;
+
 		background-color: $blue_white !important;
 		background-image: none !important;
-		border-color: $blue_light !important;
 	}
+
 	> .md {
 		background-color: white !important;
 		background-image: none !important;
@@ -64,17 +72,19 @@ a[href$="/s"], a[href$="/spoiler"] {
 .titlebox {
 	.add, .RESshortcutside, .RESDashboardToggle {
 		padding: 3px 6px !important;
-		background-image: none !important;
-		background-color: $green !important;
 		border-radius: 1px !important;
+
+		background-color: $green !important;
+		background-image: none !important;
+
 		font-weight: normal !important;
 		text-transform: capitalize !important;
-
 	}
 }
 
 .remove {
 	@extend .add;
+
 	background-color: $red !important;
 }
 
@@ -85,10 +95,11 @@ a[href$="/s"], a[href$="/spoiler"] {
 }
 
 .arrow {
+	height: 15px !important;
+	width: 15px !important;
+
 	background-position: 0 0 !important;
 	background-size: 100% !important;
-	width: 15px !important;
-	height: 15px !important;
 }
 
 .domain, .linkflairlabel {
@@ -106,6 +117,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 .arrow.down {
 	background-image: url($path_arrow_down) !important;
 }
+
 .downmod {
 	background-image: url($path_arrow_down_vote) !important;
 }
@@ -113,17 +125,18 @@ a[href$="/s"], a[href$="/spoiler"] {
 .expando-button {
 	$expando_width: 24px;
 
-	min-width: $expando_width !important;
+	height: $expando_width !important;
 	min-height: $expando_width !important;
 	width: $expando_width !important;
-	height: $expando_width !important;
-	background-size: 144px !important;
+	min-width: $expando_width !important;
+
 	background-image: url($path_buttons_main) !important;
 	background-repeat: no-repeat !important;
-
+	background-size: 144px !important;
 
 	&.video.collapsed, &.video-muted.collapsed {
 		background-position: (0 * $expando_width ) 0 !important;
+
 		&:hover {
 			// For some reason when I don't have brackets around the y-value, it acts weird.
 			background-position: (0 * $expando_width) (-$expando_width) !important;
@@ -132,6 +145,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 	&.video.expanded, &.video-muted.expanded {
 		background-position: (-1 * $expando_width) 0 !important;
+
 		&:hover {
 			background-position: (-1 * $expando_width) (-$expando_width) !important;
 		}
@@ -139,6 +153,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 	&.selftext.collapsed {
 		background-position: (-2 * $expando_width) 0 !important;
+
 		&:hover {
 			background-position: (-2 * $expando_width) (-$expando_width) !important;
 		}
@@ -146,6 +161,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 	&.selftext.expanded {
 		background-position: (-3 * $expando_width) 0 !important;
+
 		&:hover {
 			background-position: (-3 * $expando_width) (-$expando_width) !important;
 		}
@@ -153,6 +169,7 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 	&.image.collapsed {
 		background-position: (-4 * $expando_width) 0 !important;
+
 		&:hover {
 			background-position: (-4 * $expando_width) (-$expando_width) !important;
 		}
@@ -160,47 +177,23 @@ a[href$="/s"], a[href$="/spoiler"] {
 
 	&.image.expanded {
 		background-position: (-5 * $expando_width) 0 !important;
+
 		&:hover {
 			background-position: (-5 * $expando_width) (-$expando_width) !important;
 		}
 	}
 }
 
-// Capitalize
-.user,
-#mail,
-.pref-lang,
-.logout,
-#search input[name="q"]::-webkit-input-placeholder,
-#searchexpando,
-.goldvertisement,
-.goldvertisement a,
-.right,
-.account-activity-box a,
-.titlebox .bottom,
-.helplink,
-.date,
-.shortlink,
-.roundfield .title,
-.info-notice,
-.pretty-form + h1,
-#remember-me > label,
-#remember-me > .recover-password,
-.bottom .age,
-#RESShortcuts {
+.user,#mail,.pref-lang,.logout,#search input[name="q"]::-webkit-input-placeholder,#searchexpando,.goldvertisement,.goldvertisement a,.right,.account-activity-box a,.titlebox .bottom,.helplink,.date,.shortlink,.roundfield .title,.info-notice,.pretty-form + h1,#remember-me > label,#remember-me > .recover-password,.bottom .age,#RESShortcuts {
 	&:first-letter {
 		text-transform: uppercase !important;
 	}
 }
 
 // :first-letter doesn't work on inline elements, these are 'converted' to block elements
-.content .commentarea .panestack-title .title,
-.wikititle,
-.wikiaction,
-#wikiactions .content li ul a,
-.title,
-.gray {
+.content .commentarea .panestack-title .title,.wikititle,.wikiaction,#wikiactions .content li ul a,.title,.gray {
 	display: inline-block !important;
+
 	&:first-letter {
 		text-transform: uppercase !important;
 	}

@@ -1,63 +1,59 @@
 #header {
-	background: $blue_white !important;
-	border-bottom: 1px solid $blue_light !important;
+	z-index: $header_z_index !important;
+
 	height: $header_height !important;
 	width: 100% !important;
 	box-sizing: border-box !important;
 	padding-bottom: 5px !important;
-	z-index: $header_z_index !important;
+	border-bottom: 1px solid $blue_light !important;
+
+	background: $blue_white !important;
 
 	#sr-header-area {
 		height: 28px !important;
 		border-bottom: none !important;
+
 		background: transparent !important;
 	}
 
 	#sr-header-area .width-clip, #sr-more-link {
 		padding: 5px !important;
+
 		background: transparent !important;
 	}
 
 	#sr-header-area .sr-list {
-	    text-overflow: ellipsis !important;
-	    max-width: 90% !important;
-	    display: block !important;
+		display: block !important;
+
+		max-width: 90% !important;
+
+		text-overflow: ellipsis !important;
 	}
 
 	#header-bottom-left {
-
 		#header-img.default-header {
-			background-image: url($path_reddit_logo) !important;
-			background-size: auto 40px !important;
-			background-position: center !important;
 			width: 135px !important;
 			margin: 5px 0 0 0 !important;
+
+			background-image: url($path_reddit_logo) !important;
+			background-position: center !important;
+			background-size: auto 40px !important;
 		}
 
 		.tabmenu {
 			li a {
-				font-weight: normal !important;
-				background-color: $blue_white !important;
-				border: none !important;
-				text-transform: capitalize !important;
 				// Capitalize only works on blocks. So instead of using inline, we use blocks and left float.
 				display: block !important;
 				float: left !important;
-				padding: 0 10px !important;
-			}
-		}
-	}
 
-	#header-bottom-right {
-		display: block !important;
-		background-color: $blue_white !important;
-		border-spacing: 0 !important;
-		bottom: 0 !important;
-		top: auto !important;
-		font-size: 11px !important;
-		padding: 0 !important;
-		& > * {
-			margin-right: 3px !important;
+				padding: 0 10px !important;
+				border: none !important;
+
+				background-color: $blue_white !important;
+
+				font-weight: normal !important;
+				text-transform: capitalize !important;
+			}
 		}
 	}
 
@@ -66,61 +62,66 @@
 	}
 
 	#header-bottom-right {
-
-		.user,
-		#mail,
-		.pref-lang,
-		.logout,
-		#modmail {
+		.user,		#mail,		.pref-lang,		.logout,		#modmail {
 			display: inline-block !important;
 		}
 
-		#modmail  {
+		#modmail {
 			margin-top: 4px !important;
 		}
 
-		.user,
-		.pref-lang,
-		.logout {
-			margin: 0 !important;
+		.user,		.pref-lang,		.logout {
 			float: left !important;
-			line-height: 24px !important;
-			padding: 0 5px !important;
-			width: auto !important;
+
 			height: auto !important;
+			width: auto !important;
+			padding: 0 5px !important;
+			margin: 0 !important;
+
 			font-weight: normal !important;
+			line-height: 24px !important;
+
 			&:first-letter {
 				text-transform: uppercase !important;
 			}
 		}
 
 		.user {
-			margin-left: 10px !important; // Spacing between userbarToggle from RES and the username
+			// Spacing between userbarToggle from RES and the username
+			margin-left: 10px !important;
 		}
 	}
 
 	.logout {
-		text-transform: lowercase !important; // Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
+		text-transform: lowercase !important;
+
+		// Prevent double capitals from capitalize on 2 words like 'Log out' (Log Out -> Log outline-offset: )
 		a {
-			display: block !important; // For :first-letter uppercase
+			// For :first-letter uppercase
+			display: block !important;
 		}
 	}
 
 	.userkarma {
-		border-bottom: none !important; // Removes the dotted bottom border below your karma
+		// Removes the dotted bottom border below your karma
+		border-bottom: none !important;
 	}
 
 	#mail {
 		float: left !important;
+
 		height: 10px !important;
-		margin-top: 5px !important;
 		padding: 0 !important;
+		margin-top: 5px !important;
+
 		background-image: url($path_mail) !important;
-		background-size: 15px 20px !important;
 		background-repeat: no-repeat !important;
+		background-size: 15px 20px !important;
+
 		&.nohavemail {
 			background-position: 0 0 !important;
 		}
+
 		&.havemail {
 			background-position: 0 -10px !important;
 		}

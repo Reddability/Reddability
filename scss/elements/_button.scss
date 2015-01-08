@@ -1,17 +1,18 @@
 button, select, input[type="submit"] {
     height: auto !important;
     padding: 6px !important;
-
-    background-color: white !important;
     border: 1px solid $blue_light !important;
     border-radius: 1px !important;
+
+    background-color: white !important;
 
     color: $blue_dark !important;
     text-transform: capitalize !important;
 
     &:hover, &:active, &:focus {
         border-color: $blue_dark !important;
-        background-color: $blue_white !important;
         outline: none !important;
+
+        background-color: $blue_white !important;
     }
 }

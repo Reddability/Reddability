@@ -1,13 +1,15 @@
 .footer-parent {
-    margin: 0 !important;
-    padding: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 // NERPageMarker inherits from .footer, we cannot put it in .footer-parent
 .footer {
-    margin-top: 0 !important;
-    border: 1px solid $blue_light !important;
-    border-radius: 1px !important;
-    text-transform: capitalize !important;
-    background: white !important;
+	margin-top: 0 !important;
+	border: 1px solid $blue_light !important;
+	border-radius: 1px !important;
+
+	background: white !important;
+
+	text-transform: capitalize !important;
 }
