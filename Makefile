@@ -16,7 +16,7 @@ comma := ,
 space :=
 space +=
 
-all: subreddit chrome
+all: subreddit chrome safari
 
 dev: subreddit chromewebstore
 
