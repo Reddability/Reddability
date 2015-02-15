@@ -57,7 +57,7 @@ chromewebstore: chrome
 
 safari: scss/main.scss safaricopy
 	sass --update scss/safari.scss:$(safariPath)css/main.css --scss --sourcemap=none
-	cp $(safariIcon) $(safariPath)/icon.png
+	cp $(safariIcon) $(safariPath)icon.png
 
 
 clean:
