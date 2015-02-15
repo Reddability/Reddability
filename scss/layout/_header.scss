@@ -62,7 +62,8 @@
 	}
 
 	#header-bottom-right {
-		.user,		#mail,		.pref-lang,		.logout,		#modmail {
+		top: 19px !important;
+		.user, #mail, .pref-lang, .logout, #modmail {
 			display: inline-block !important;
 		}
 
@@ -70,7 +71,7 @@
 			margin-top: 4px !important;
 		}
 
-		.user,		.pref-lang,		.logout {
+		.user, .pref-lang, .logout {
 			float: left !important;
 
 			height: auto !important;

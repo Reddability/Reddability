@@ -1,26 +1,3 @@
-#header {
-	#userbarToggle {
-		margin-bottom: 1px !important;
-		border: none !important;
-
-		background-color: transparent !important;
-
-		color: $blue_dark !important;
-	}
-
-	#srLeftContainer, #RESShortcutsViewport, #RESShortcutsEditContainer {
-		@extend #sr-more-link;
-	}
-
-	#RESShortcutsEditContainer {
-		background: transparent !important;
-
-		#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft {
-			background: transparent !important;
-		}
-	}
-}
-
 #RESShortcutsAddFormContainer, #srList {
 	// Needs to be above #header
 	z-index: $header_z_index + 1 !important;
@@ -139,66 +116,6 @@
 
 .RESDialogSmall {
 	@extend .livePreview;
-}
-
-// Cog image to open the preference dropdown
-#openRESPrefs {
-	position: absolute !important;
-	top: -17px !important;
-	right: 3px !important;
-}
-
-.RESDropdownList, #RESPrefsDropdown {
-	z-index: $header_z_index + 1 !important;
-
-	border: 1px solid $blue_dark !important;
-	// Under the options wheel thingy
-	border-radius: 1px !important;
-
-	background-color: white !important;
-}
-
-#RESPrefsDropdown {
-	right: -1px !important;
-
-	#RESDropdownOptions {
-		li, a {
-			color: $blue_dark !important;
-			font-weight: normal !important;
-
-			i {
-				@if $path_prefs_dropdown {
-					background-image: url($path_prefs_dropdown) !important;
-				}
-
-				border-color: $blue_dark !important;
-
-				color: inherit !important;
-			}
-
-			&:hover {
-				background-color: $blue_white !important;
-			}
-
-			&:first-letter {
-				text-transform: uppercase !important;
-			}
-
-			&:last-of-type {
-				border-bottom: none !important;
-			}
-		}
-	}
-}
-
-.RESGearOverlay {
-	@extend .RESDropdownList;
-
-	visibility: hidden !important;
-	margin: 4px 5px 0px 5px !important;
-	border: none !important;
-
-	background: none !important;
 }
 
 #RESConsole input {
