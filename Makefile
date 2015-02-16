@@ -6,7 +6,8 @@ chromeFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss,$(files)
 safariFiles = $(strip $(filter-out Makefile README.md .gitignore %.scss _locales/% manifest.json,$(files)))
 safariIcon = img/branding/app_iconx256.png
 
-chromePath = publish/chrome/
+chromePath = publish/Reddability-chrome/
+chromeCrxPath = publish/Reddability-chrome.crx
 safariPath = publish/Reddability.safariextension/
 subredditPath = publish/subreddit/
 
@@ -49,11 +50,11 @@ safaricopy:
 
 chrome: scss/main.scss chromecopy
 	sass --update scss/main.scss:$(chromePath)css/main.css --scss --sourcemap=none
-	cd $(chromePath); zip -r ../Reddability-chrome.crx *
+	./dir2crx.sh $(chromePath) Reddability.pem $(chromeCrxPath)
 	rm -rf $(chromePath)
 
 chromewebstore: chrome
-	cp publish/Reddability-chrome.crx publish/Reddability-chrome.zip
+	cd $(chromePath); zip -r ../Reddability-chrome.zip *
 
 safari: scss/main.scss safaricopy
 	sass --update scss/safari.scss:$(safariPath)css/main.css --scss --sourcemap=none
