@@ -48,13 +48,16 @@ safaricopy:
 		done \
 	done <<< "$(safariFiles)"
 
-chrome: scss/main.scss chromecopy
+chromescss: scss/main.scss chromecopy
 	sass --update scss/main.scss:$(chromePath)css/main.css --scss --sourcemap=none
+
+chrome: chromescss
 	./dir2crx.sh $(chromePath) Reddability.pem $(chromeCrxPath)
 	rm -rf $(chromePath)
 
-chromewebstore: chrome
+chromewebstore: chromescss
 	cd $(chromePath); zip -r ../Reddability-chrome.zip *
+	rm -rf $(chromePath)
 
 safari: scss/main.scss safaricopy
 	sass --update scss/safari.scss:$(safariPath)css/main.css --scss --sourcemap=none
